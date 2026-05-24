@@ -378,25 +378,15 @@
         font-family: 'Bangers', cursive; font-size: 2.5rem; color: var(--red-vintage);
         text-align: center; margin: 0.5rem 0;
     }
-        /* ── Hero photo */
-    .hero-photo {
-        width: 90px; height: 90px;
-        border-radius: 50%;
-        border: 3px solid var(--green-vintage);
-        object-fit: cover;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-</style></head>
+    </style>
+</head>
 <body>
 
 <div id="progress-bar"></div>
 
+<!-- ═══ NAVIGATION ═══ -->
 <nav>
-    <div class="nav-brand">
-        <img src="Escudo_UD.png" alt="UD" style="height:32px;vertical-align:middle;margin-right:0.5rem;">
-        Comercio Digital · La Guajira
-    </div>
+    <div class="nav-brand">🌵 Comercio Digital · La Guajira</div>
     <ul class="nav-links">
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#pregunta">¿Por qué?</a></li>
@@ -407,7 +397,6 @@
         <li><a href="#casos">Casos Reales</a></li>
         <li><a href="#eudr">EUDR</a></li>
         <li><a href="#demo-bc">Demo</a></li>
-        <li><a href="#dona-carmen">Doña Carmen</a></li>
         <li><a href="#dikw">DIKW</a></li>
         <li><a href="#forma-datos">Forma</a></li>
         <li><a href="#analisis">Análisis</a></li>
@@ -430,46 +419,59 @@
 <!-- 1. HERO -->
 <!-- ════════════════════════════════════════════ -->
 <section id="hero">
+    <div class="halftone-overlay"></div>
     <div class="hero-bg"></div>
-    <div class="hero-panel">
-        <div class="hero-title">
-            <span>Comercio Digital</span>
-            <span>desde <span class="highlight">La Guajira</span></span>
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="hero-panel">
+            <div class="hero-title">
+                <span>Comercio Digital</span>
+                <span style="color: var(--red-vintage);">desde La Guajira</span>
+            </div>
+            <p class="hero-tagline">De Riohacha al mundo: vende tus productos con blockchain, IA y ecommerce.<br><strong>Sin vitrina física. Sin fronteras. Sin límite.</strong></p>
+            <div class="hero-badges">
+                <span class="badge badge-blockchain">Blockchain</span>
+                <span class="badge badge-ia">Inteligencia Artificial</span>
+                <span class="badge badge-green">Ecommerce</span>
+                <span class="badge badge-orange">Marketing Digital</span>
+                <span class="badge badge-cyan">EUDR</span>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--ink-faded);">Colombia 5.0 · MinTIC · La Guajira, Riohacha</p>
+            <a href="#pregunta" class="ghost-btn" style="margin-top: 1.5rem; display: inline-block;">Explorar</a>
         </div>
-        <img src="photo_camilo.png" alt="Camilo Lopez" style="width:80px;height:80px;border-radius:50%;border:3px solid var(--green-vintage);object-fit:cover;display:block;margin:0 auto 0.8rem;">
-        <p class="hero-tagline">De Riohacha al mundo: vende tus productos con blockchain, IA y ecommerce.<br>
-<strong>Sin vitrina física. Sin fronteras. Sin límite.</strong></p>
-        <div class="hero-badges">
-            <span class="badge badge-blockchain">Blockchain</span>
-            <span class="badge badge-ia">Inteligencia Artificial</span>
-            <span class="badge badge-green">Ecommerce</span>
-            <span class="badge badge-orange">Marketing Digital</span>
-            <span class="badge badge-red">EUDR</span>
-        </div>
-        <p class="hero-sub">Colombia 5.0 · MinTIC · La Guajira, Riohacha</p>
-        <a href="#pregunta" class="comic-btn green" style="margin-top:1rem;">Explorar →</a>
     </div>
     <div class="scroll-arrow">↓ Desplázate para explorar ↓</div>
 </section>
 
-
 <!-- ════════════════════════════════════════════ -->
-<!-- 2. PREGUNTA PROVOCADORA -->
+<!-- 2. PREGUNTA — ¿Por qué vender desde La Guajira? -->
 <!-- ════════════════════════════════════════════ -->
 <section id="pregunta">
+    <div class="action-lines"></div>
     <div class="section-inner">
         <div class="section-label">Pregunta</div>
-        <h2 class="section-title">¿Por qué un emprendedor de La Guajira<br>debe vender <span class="highlight">menos</span> que uno de Bogotá?</h2>
-        <p class="section-subtitle">Un cafetero del Eje Cafetero exporta por su web. Una artesana wayuu vende mochilas a Europa desde Uribia.<br><br><strong>¿Qué tiene La Guajira que el mundo necesita ver?</strong></p>
+        <h2 class="section-title">¿Por qué un emprendedor de<br><span class="highlight">La Guajira</span> debe vender menos que uno de Bogotá?</h2>
+        <p class="section-subtitle">Un cafetero del Eje Cafetero exporta por su web.<br>Una artesana wayuu vende mochilas a Europa desde Uribia.<br><br><strong>¿Qué tiene La Guajira que el mundo necesita ver?</strong></p>
         <div class="stat-grid grid-4">
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;">🧶</div><h4>Mochilas Wayuu</h4><p>Tejidas a mano con tradición ancestral</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;">🧂</div><h4>Sal de Manaure</h4><p>Única en Colombia, reconocimiento mundial</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;">💨</div><h4>Energía Eólica</h4><p>Jepirachi, pioneros en energía renovable</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;">🎨</div><h4>Artesanías</h4><p>Hamacas, chinchorros, cerámica</p></div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🧶</div>
+                <p><strong>Mochilas Wayuu</strong><br>Tejidas a mano con tradición ancestral</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🧂</div>
+                <p><strong>Sal de Manaure</strong><br>Única en Colombia, reconocimiento mundial</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">💨</div>
+                <p><strong>Energía Eólica Jepirachi</strong><br>Pioneros en energía renovable</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🎨</div>
+                <p><strong>Artesanías Wayuu</strong><br>Hamacas, chinchorros, cerámica</p>
+            </div>
         </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+        <div class="char-row" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
     <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
     <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
     <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
@@ -497,350 +499,402 @@
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- datos -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 3. DATOS — Ecommerce stats Colombia -->
+<!-- ════════════════════════════════════════════ -->
 <section id="datos">
-<div class="section-inner">
-        <div class="section-label">Dato real</div>
-        <h2 class="section-title">El comercio digital en Colombia no para de crecer</h2>
-        <div class="stat-grid grid-3">
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;color:var(--green-vintage);">68%</div><h4>Compraron online en 2025</h4><p>$52 billones de pesos en comercio electrónico</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;color:var(--green-vintage);">25%</div><h4>Crecimiento anual</h4><p>El ecommerce crece 25% cada año en Colombia</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2.5rem;color:var(--green-vintage);">La Guajira</div><h4>Sin límites</h4><p>Con internet, Riohacha está a un clic del mundo</p></div>
+    <div class="section-inner">
+        <div class="section-label">Datos reales</div>
+        <h2 class="section-title">El comercio electrónico<br>en <span class="highlight">Colombia</span></h2>
+        <div class="comic-stats">
+            <div class="comic-stat"><div class="num">68%</div><div class="label">Colombianos compraron por internet en 2025</div></div>
+            <div class="comic-stat"><div class="num" style="color: var(--blue-vintage);">$52T</div><div class="label">Pesos en comercio electrónico</div></div>
+            <div class="comic-stat"><div class="num" style="color: var(--green-vintage);">25%</div><div class="label">Crecimiento anual del ecommerce</div></div>
         </div>
-        <p class="section-subtitle" style="margin-top:1rem;">La pregunta no es SI vender online.<br>La pregunta es: <strong>¿vas a esperar o vas a empezar hoy?</strong></p>
+        <p class="section-subtitle" style="text-align: center; margin-top: 1.5rem;">La pregunta no es SI vender online.<br>La pregunta es: <strong>¿vas a esperar o vas a empezar hoy?</strong></p>
+        <p class="source" style="text-align:center;">Fuente: Cámara Colombiana de Comercio Electrónico</p>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- estructura -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 4. ESTRUCTURA — Cómo funciona el taller -->
+<!-- ════════════════════════════════════════════ -->
 <section id="estructura">
-<div class="section-inner">
-        <div class="section-label">Estructura del taller</div>
-        <h2 class="section-title">4 horas · Taller interactivo desde Riohacha</h2>
-        <div class="stat-grid grid-4">
-            <div class="stat-box"><div style="font-size:2rem;">🌊</div><h4>Bloque 1</h4><p>La Guajira como oportunidad digital</p><span class="badge badge-gold">30 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">🏪</div><h4>Bloque 2</h4><p>Tu tienda online con IA</p><span class="badge badge-gold">50 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">📱</div><h4>Bloque 3</h4><p>Marketing digital sin presupuesto</p><span class="badge badge-gold">50 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">🔗</div><h4>Bloque 4</h4><p>Blockchain: origen y EUDR</p><span class="badge badge-gold">25 min</span></div>
+    <div class="section-inner">
+        <div class="section-label">Estructura</div>
+        <h2 class="section-title">¿Qué <span class="highlight">vamos a ver</span>?</h2>
+        <div class="timeline">
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 1: Blockchain</h4><p>Qué es, cómo funciona, herramientas, EUDR, casos reales</p></div></div>
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 2: Datos e Inteligencia</h4><p>DIKW, tipos de datos, análisis exploratorio, BI</p></div></div>
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 3: Inteligencia Artificial</h4><p>Cómo funciona IA, modelo vs asistente vs agente</p></div></div>
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 4: Actividades prácticas</h4><p>Descripciones con IA, fotos de producto, nombre de marca</p></div></div>
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 5: Marketing Digital</h4><p>Redes sociales, WhatsApp Business, Instagram, SEO</p></div></div>
+            <div class="timeline-item"><div class="timeline-content"><h4>Bloque 6: Pagos, envíos y cierre</h4><p>Nequi, MercadoPago, Servientrega, plan de acción</p></div></div>
         </div>
-        <div class="stat-grid grid-4">
-            <div class="stat-box"><div style="font-size:2rem;">🤖</div><h4>Bloque 5</h4><p>IA: ML, visión, datos</p><span class="badge badge-gold">25 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">🚚</div><h4>Bloque 6</h4><p>Pagos, envíos y plan de acción</p><span class="badge badge-gold">20 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">⚡</div><h4>Energizador</h4><p>Pitch relámpago</p><span class="badge badge-gold">5 min</span></div>
-            <div class="stat-box"><div style="font-size:2rem;">🎯</div><h4>Retos</h4><p>Actividades prácticas</p><span class="badge badge-gold">20 min</span></div>
-        </div>
-        <p class="section-subtitle" style="margin-top:1rem;">⚡ Este NO es un taller para sentarse y escuchar. <strong>Más de la mitad del tiempo vamos a hacer cosas con las manos.</strong></p>
+        <p style="margin-top: 1.5rem; font-family: 'Comic Neue', cursive; font-size: 1rem; color: var(--ink-faded); text-align: center;">⚡ Este NO es un taller para sentarse y escuchar. <strong>Más de la mitad del tiempo vamos a hacer cosas con las manos.</strong></p>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- blockchain -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 5. BLOCKCHAIN — Qué es, cómo funciona -->
+<!-- ════════════════════════════════════════════ -->
 <section id="blockchain">
-<div class="section-inner">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
         <div class="section-label">Blockchain</div>
-        <h2 class="section-title">Blockchain: El origen importa</h2>
-        <p class="section-subtitle">En La Guajira, cada artesanía wayuu cuenta una historia. Blockchain permite <strong>certificar esa historia</strong>: quién la hizo, dónde, con qué materiales. El comprador en Europa puede escanear un QR y ver toda la cadena.</p>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
-    <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
-    <path d="M95 160 L98 155 L101 160 L98 165 Z" fill="#F4D35E"/>
-    <rect x="25" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="140" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="30" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="170" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <line x1="170" y1="114" x2="190" y2="75" stroke="#8B4513" stroke-width="3"/>
-    <path d="M188 70 L190 65 L192 70 L197 72 L192 74 L190 79 L188 74 L183 72 Z" fill="#F4D35E" stroke="#1A1A1A" stroke-width="1"/>
-    <ellipse cx="100" cy="62" rx="32" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M65 42 L100 5 L135 42" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <ellipse cx="100" cy="42" rx="42" ry="8" fill="#1D3557" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="68" y="38" width="64" height="5" rx="1" fill="#F4D35E"/>
-    <path d="M78 75 Q85 105 100 108 Q115 105 122 75" fill="white" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="88" cy="60" r="3.5" fill="#1A1A1A"/>
-    <circle cx="112" cy="60" r="3.5" fill="#1A1A1A"/>
-    <path d="M90 72 Q100 78 110 72" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-</svg>
-            <div class="char-bubble">
-                <div class="char-name">🧙 Mago de los Datos</div>
-                "Blockchain no es solo Bitcoin. Es un registro inmutable. Imagina que cada mochila wayuu tiene un certificado digital que nadie puede falsificar. El comprador en Alemania sabe exactamente quién la tejió, en qué comunidad, y que es auténtica."
+        <h2 class="section-title">El Notario Digital<br><span class="highlight">Incorruptible</span></h2>
+        <p class="section-subtitle">Imagina un libro de registros que <strong>nadie puede borrar, alterar ni hackear</strong>. Eso es blockchain.</p>
+        <div class="stat-grid grid-3">
+            <div class="stat-box" style="text-align: center;">
+                <h4 style="color: var(--blue-vintage);">1. Registro</h4>
+                <p>Cada acción se graba como un "bloque" — como una página del libro. Incluye fecha, lugar, responsable, qué pasó.</p>
+            </div>
+            <div class="stat-box" style="text-align: center;">
+                <h4 style="color: var(--red-vintage);">2. Encadenamiento</h4>
+                <p>Cada bloque se conecta al anterior con un código matemático único. Si alguien altera uno, <strong>toda la cadena se rompe</strong>.</p>
+            </div>
+            <div class="stat-box" style="text-align: center;">
+                <h4 style="color: var(--green-vintage);">3. Distribución</h4>
+                <p>Ese libro está copiado en <strong>miles de computadores</strong> en el mundo. Para alterar un dato, tendrías que cambiar miles de copias al mismo tiempo. <strong>Imposible falsificar.</strong></p>
             </div>
         </div>
-        <div class="stat-grid grid-3" style="margin-top:1rem;">
-            <div class="stat-box"><h4>🔒 Inmutable</h4><p>Nadie puede modificar los registros una vez escritos</p></div>
-            <div class="stat-box"><h4>🌐 Descentralizado</h4><p>No depende de una sola entidad o gobierno</p></div>
-            <div class="stat-box"><h4>✅ Verificable</h4><p>Cualquiera puede verificar la autenticidad</p></div>
-        </div>
+        <p class="source" style="text-align:center;">Más info: <a href="https://ethereum.org/es/what-is-ethereum/" target="_blank">ethereum.org/es</a> · <a href="https://www.vechain.org" target="_blank">VeChain</a> · <a href="https://origintrail.io" target="_blank">OriginTrail</a></p>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- blockchain-herr -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 6. BLOCKCHAIN HERRAMIENTAS — VeChain, Provenance, OriginTrail -->
+<!-- ════════════════════════════════════════════ -->
 <section id="blockchain-herr">
-<div class="section-inner">
-        <div class="section-label">Blockchain</div>
-        <h2 class="section-title">Herramientas de blockchain para tu negocio</h2>
-        <div class="stat-grid grid-2">
-            <div class="stat-box"><h4>📋 OpenChain</h4><p>Plataforma gratuita de la Linux Foundation para crear registros de cadena de suministro. Ideal para certificar artesanías wayuu y sal de Manaure.</p><span class="badge badge-gold">Gratis</span></div>
-            <div class="stat-box"><h4>🔗 IBM Food Trust</h4><p>Blockchain para trazabilidad alimentaria. Si vendes productos agroalimentarios de La Guajira, puedes certificar su origen.</p><span class="badge badge-gold">Empresarial</span></div>
-            <div class="stat-box"><h4>📊 Provenance</h4><p>Plataforma para rastrear el origen de productos. Perfecta para mostrar la historia detrás de cada artesanía.</p><span class="badge badge-gold">SaaS</span></div>
-            <div class="stat-box"><h4>🌍 VeChain</h4><p>Blockchain empresarial para supply chain. Empresas como DNV lo usan para certificar productos de lujo y artesanales.</p><span class="badge badge-gold">Enterprise</span></div>
+    <div class="section-inner">
+        <div class="section-label">Herramientas</div>
+        <h2 class="section-title">Blockchain para <span class="highlight">PYMEs</span></h2>
+        <p class="section-subtitle">No necesitas ser programador. Estas plataformas hacen el trabajo pesado.</p>
+        <div class="stat-grid grid-3">
+            <div class="stat-box">
+                <h4 style="color: var(--blue-vintage);">VeChain ToolChain</h4>
+                <p>BaaS/PaaS/SaaS blockchain. Clientes: <strong>Walmart, Bayer, PwC, DNV</strong>. QR → historial completo. Bajo costo por transacción.</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.vechain.org" target="_blank">vechain.org</a></p>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--purple-vintage);">Provenance</h4>
+                <p>Plataforma de "Proof Points": pruebas digitales verificables y revocables. Usada por <strong>Napolina (30M productos)</strong>. +31% conversión.</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.provenance.org" target="_blank">provenance.org</a></p>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--green-vintage);">OriginTrail (DKG)</h4>
+                <p>Grafo de conocimiento descentralizado. Red SCAN: auditorías de 20.000 fábricas en 74 países. Open source.</p>
+                <p style="margin-top: 0.5rem;"><a href="https://origintrail.io" target="_blank">origintrail.io</a></p>
+            </div>
+        </div>
+        <div class="char-row char-right" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    <rect x="55" y="95" width="90" height="95" rx="5" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M85 95 L100 140 L115 95" fill="white" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="25" y="105" width="35" height="20" rx="10" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <rect x="140" y="105" width="35" height="20" rx="10" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="30" cy="115" r="11" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="170" cy="115" r="11" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <ellipse cx="100" cy="62" rx="33" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M67 50 Q72 22 100 28 Q128 22 133 50" fill="#333" stroke="#1A1A1A" stroke-width="2.5"/>
+    <ellipse cx="87" cy="60" rx="12" ry="9" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <ellipse cx="113" cy="60" rx="12" ry="9" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="99" y1="60" x2="101" y2="60" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="87" cy="60" r="3" fill="#1A1A1A"/>
+    <circle cx="113" cy="60" r="3" fill="#1A1A1A"/>
+    <path d="M88 75 Q100 85 112 75" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <path d="M96 95 L100 128 L104 95" fill="#E63946" stroke="#1A1A1A" stroke-width="2"/>
+</svg>
+            <div class="char-bubble">
+                <div class="char-name">📊 Analista de BI</div>
+                "El 67% de los consumidores pagarían más por productos con trazabilidad blockchain verificada. Para las artesanas de La Guajira, esto significa que cada mochila puede tener su propia historia certificada."
+            </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- casos -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 7. CASOS REALES -->
+<!-- ════════════════════════════════════════════ -->
 <section id="casos">
-<div class="section-inner">
-        <div class="section-label">Casos reales</div>
-        <h2 class="section-title">Blockchain en acción: casos que inspiran</h2>
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Casos Reales</div>
+        <h2 class="section-title">Blockchain <span class="highlight">Certificando Origen</span></h2>
         <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>☕ Café de Colombia</h4><p>La Federación Nacional de Cafeteros usa blockchain para certificar el origen del café colombiano en mercados internacionales.</p></div>
-            <div class="stat-box"><h4>🧶 Artesanías Wayuu</h4><p>Proyectos piloto en Riohacha usan QR + blockchain para que cada mochila tenga un certificado de autenticidad digital.</p></div>
-            <div class="stat-box"><h4>🥑 Aguacate de Nariño</h4><p>Exportadores usan blockchain para demostrar trazabilidad completa desde la finca hasta el supermercado en Europa.</p></div>
-            <div class="stat-box"><h4>🍫 Cacao del Chocó</h4><p>Cooperativas certifican cacao orgánico con blockchain para cumplir con regulaciones europeas (EUDR).</p></div>
-            <div class="stat-box"><h4>🧂 Sal de Manaure</h4><p>Productores de sal podrían usar blockchain para certificar el proceso artesanal y el origen geográfico único.</p></div>
-            <div class="stat-box"><h4>💨 Carbon Credits</h4><p>Proyectos eólicos en La Guajira (Jepirachi) usan blockchain para certificar créditos de carbono verificados.</p></div>
+            <div class="stat-box">
+                <h4>☕ Farmer Connect</h4>
+                <p>Blockchain (IBM) con la <strong>Federación Nacional de Cafeteros de Colombia</strong>. App "Thank My Farmer" con QR desde la finca.</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.farmerconnect.com" target="_blank">farmerconnect.com</a></p>
+            </div>
+            <div class="stat-box">
+                <h4>🍅 Napolina</h4>
+                <p><strong>30 millones de latas</strong> con QR en supermercados de UK. Al escanear: origen, finca, prácticas laborales, impacto ambiental. Verificado por Provenance.</p>
+                <p style="margin-top: 0.5rem;"><a href="https://www.provenance.org/case-studies/napolina" target="_blank">Ver caso completo</a></p>
+            </div>
+            <div class="stat-box">
+                <h4>🍼 Danone</h4>
+                <p><strong>QR doble</strong> en 21 países: código externo + código interno anti-falsificación. <strong>Premio Gartner 2024.</strong></p>
+            </div>
+        </div>
+        <div class="stat-grid grid-3" style="margin-top: 1rem;">
+            <div class="stat-box">
+                <h4>🍫 Tony's Chocolonely</h4>
+                <p>Trazabilidad 100% del cacao con <strong>BeanTracker</strong>. 900 ton, 400 transacciones rastreadas.</p>
+            </div>
+            <div class="stat-box">
+                <h4>👗 TextileGenesis</h4>
+                <p><strong>H&M</strong> trazó +200M prendas con "Fibercoins" digitales. Verificación FSC integrada.</p>
+            </div>
+            <div class="stat-box">
+                <h4>🦐 Austral Fisheries</h4>
+                <p><strong>QR en cajas de langostinos</strong> en Woolworths Australia. Zona de captura, barco, certificación MSC.</p>
+            </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- eudr -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 8. EUDR -->
+<!-- ════════════════════════════════════════════ -->
 <section id="eudr">
-<div class="section-inner">
-        <div class="section-label">EUDR</div>
-        <h2 class="section-title">EUDR: La regulación europea que afecta a Colombia</h2>
-        <p class="section-subtitle">La <strong>EUDR (European Union Deforestation Regulation)</strong> exige que productos como café, cacao, madera y cuero demuestren que NO provienen de tierras deforestadas después de 2020.</p>
-        <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>📅 Vigencia</h4><p>Desde diciembre 2024, las empresas deben demostrar trazabilidad completa de sus productos.</p></div>
-            <div class="stat-box"><h4>🌍 Productos afectados</h4><p>Café, cacao, madera, caucho, aceite de palma, ganadería y sus derivados.</p></div>
-            <div class="stat-box"><h4>🔗 Solución blockchain</h4><p>Blockchain + geolocalización proporciona evidencia inmutable del origen sostenible.</p></div>
-        </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <rect x="70" y="130" width="60" height="60" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="65" y="180" width="70" height="12" rx="3" fill="#457B9D" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="30" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="130" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="38" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="162" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M158 140 L175 125 L180 130 L163 145 Z" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="1.5"/>
-    <ellipse cx="100" cy="85" rx="30" ry="35" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M70 65 Q75 40 100 30 Q125 40 130 65" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M68 62 Q72 42 100 32 Q128 42 132 62" fill="#1D3557" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="82" y="78" width="36" height="14" rx="4" fill="#1A1A1A" opacity="0.12"/>
-    <rect x="84" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="104" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <circle cx="90" cy="84" r="2.5" fill="#1A1A1A"/>
-    <circle cx="110" cy="84" r="2.5" fill="#1A1A1A"/>
-    <path d="M92 95 Q100 100 108 95" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-</svg>
-            <div class="char-bubble">
-                <div class="char-name">📊 Analista de BI</div>
-                "Si La Guajira quiere exportar productos agrícolas a Europa, necesita un sistema de trazabilidad. Blockchain no es opcional — es un requisito regulatorio. Las cooperativas que lo adopten primero tendrán ventaja competitiva."
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="section-label" style="background: var(--red-vintage); color: white;">Regulación Urgente</div>
+        <h2 class="section-title">EUDR: La Normativa<br>que <span class="highlight">Cambia Todo</span></h2>
+        <div class="two-col">
+            <div class="two-col-text">
+                <p>El <strong>Reglamento de Deforestación de la UE (EUDR)</strong> obliga a demostrar que los productos importados <strong>no causaron deforestación</strong>.</p>
+                <p style="margin-top: 1rem;">Aplica a: <strong>café, cacao, soja, aceite de palma, madera, caucho, ganado</strong> y sus derivados.</p>
+                <p style="margin-top: 1rem; font-size: 1.1rem; color: var(--red-vintage); font-weight: 700;">Fecha límite: 30 jun 2026 (PYMEs). Ya es ley vigente. <strong>No es si va a pasar — ya pasó.</strong></p>
+                <p style="margin-top: 1rem;">Para La Guajira: las <strong>mochilas wayuu</strong> usan fibras naturales y algodón. Los compradores europeos pueden exigir prueba de origen sostenible.</p>
+            </div>
+            <div>
+                <div class="caption-box red">
+                    <strong>Sin trazabilidad, no exportas a Europa.</strong> Pero con blockchain, hasta la artesana más pequeña puede certificar su cadena productiva completa.
+                </div>
+                <p style="margin-top: 1rem;"><a href="https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en" target="_blank">Más info: Comisión Europea - EUDR</a></p>
             </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- demo-bc -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 9. DEMO BLOCKCHAIN — Paso a paso -->
+<!-- ════════════════════════════════════════════ -->
 <section id="demo-bc">
-<div class="section-inner">
+    <div class="section-inner">
         <div class="section-label">Demo</div>
-        <h2 class="section-title">Simulación: Cadena de bloques de una Mochila Wayuu</h2>
-        <p class="section-subtitle">Cada paso de la cadena se registra como un bloque inmutable.</p>
-        <div class="stat-grid grid-4" style="margin-top:1rem;">
-            <div class="stat-box" style="border-color:var(--green-vintage);"><h4>📦 Bloque 1</h4><p><strong>Origen:</strong> Materiales recolectados en Rancho Wayuu, Uribia</p><small style="color:var(--green-vintage);">✅ Verificado</small></div>
-            <div class="stat-box" style="border-color:var(--green-vintage);"><h4>🧶 Bloque 2</h4><p><strong>Producción:</strong> Tejada por María Epieyú, artesana certificada</p><small style="color:var(--green-vintage);">✅ Verificado</small></div>
-            <div class="stat-box" style="border-color:var(--green-vintage);"><h4>🏷️ Bloque 3</h4><p><strong>Control:</strong> Calidad verificada por asociación de artesanas</p><small style="color:var(--green-vintage);">✅ Verificado</small></div>
-            <div class="stat-box" style="border-color:var(--green-vintage);"><h4>🚚 Bloque 4</h4><p><strong>Envío:</strong> Despachado desde Riohacha a Berlín, Alemania</p><small style="color:var(--green-vintage);">✅ Verificado</small></div>
+        <h2 class="section-title">Mochila Wayuu con<br><span class="highlight">Blockchain</span></h2>
+        <p class="section-subtitle">El viaje verificado de una mochila wayuu desde Uribia hasta Berlín.</p>
+        <div class="step-list">
+            <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Cosecha del algodón</strong> — La artesana María registra: Uribia, La Guajira, algodón orgánico local, marzo 2026.</div></div>
+            <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Tejido</strong> — 3 semanas de trabajo manual. Patrón Kanaas tradicional. Tintes naturales de plantas guajiras.</div></div>
+            <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Cooperativa verifica</strong> — La cooperativa wayuu certifica autenticidad, comercio justo, precio pagado a la artesana.</div></div>
+            <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Exportación</strong> — Registro de envío: Riohacha → Bogotá → Hamburgo. Certificado EUDR de origen sostenible.</div></div>
+            <div class="step"><div class="step-num">5</div><div class="step-text"><strong>Comprador en Berlín escanea QR</strong> — Ve TODO el historial: quién la hizo, cuánto se pagó, materiales, ruta.</div></div>
         </div>
-        <div style="text-align:center;margin-top:1rem;">
-            <p style="font-size:1.5rem;">📦 → 🧶 → 🏷️ → 🚚 → 🌍</p>
-            <p class="section-subtitle"><strong>Cada bloque está conectado al anterior.</strong> Si alguien intenta modificar uno, toda la cadena se rompe.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- dona-carmen -->
-<section id="dona-carmen">
-<div class="section-inner">
-        <div class="section-label">Historia real</div>
-        <h2 class="section-title">De Riohacha al mundo: La historia de Doña Carmen</h2>
-        <p class="section-subtitle">Doña Carmen Epieyú teje mochilas wayuu en su ranchería cerca de Uribia, La Guajira. Un día decidió que el mundo debía conocer su arte.</p>
-        <div class="stat-grid grid-4" style="margin-top:1rem;">
-            <div class="stat-box"><h4>📸 Paso 1: Fotos</h4><p>Tomó fotos con su celular y las subió a Instagram con hashtags como #WayuuArt #ArtesaníasColombia</p></div>
-            <div class="stat-box"><h4>🤖 Paso 2: IA</h4><p>Usó ChatGPT para escribir descripciones emocionales de cada mochila en español e inglés</p></div>
-            <div class="stat-box"><h4>🔗 Paso 3: Blockchain</h4><p>Registró cada mochila con un QR que muestra quién la tejió, dónde y con qué historia</p></div>
-            <div class="stat-box"><h4>🌍 Paso 4: Ventas</h4><p>Hoy vende a compradores en Alemania, Japón y Estados Unidos. Sin intermediarios.</p></div>
-        </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
-    <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
-    <path d="M95 160 L98 155 L101 160 L98 165 Z" fill="#F4D35E"/>
-    <rect x="25" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="140" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="30" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="170" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <line x1="170" y1="114" x2="190" y2="75" stroke="#8B4513" stroke-width="3"/>
-    <path d="M188 70 L190 65 L192 70 L197 72 L192 74 L190 79 L188 74 L183 72 Z" fill="#F4D35E" stroke="#1A1A1A" stroke-width="1"/>
-    <ellipse cx="100" cy="62" rx="32" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M65 42 L100 5 L135 42" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <ellipse cx="100" cy="42" rx="42" ry="8" fill="#1D3557" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="68" y="38" width="64" height="5" rx="1" fill="#F4D35E"/>
-    <path d="M78 75 Q85 105 100 108 Q115 105 122 75" fill="white" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="88" cy="60" r="3.5" fill="#1A1A1A"/>
-    <circle cx="112" cy="60" r="3.5" fill="#1A1A1A"/>
-    <path d="M90 72 Q100 78 110 72" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-</svg>
-            <div class="char-bubble">
-                <div class="char-name">🧙 Mago de los Datos</div>
-                "La tecnología no reemplaza la tradición. La amplifica. Cada puntada de Doña Carmen tiene siglos de cultura wayuu. Ahora el mundo puede verla, comprarla y valorarla como merece."
-            </div>
+        <div class="qr-container">
+            <p style="font-family: 'Bangers', cursive; font-size: 1.1rem; margin-bottom: 0.5rem;">🔗 Escanea para ver un ejemplo real de trazabilidad</p>
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.farmerconnect.com&color=1D3557" alt="QR Farmer Connect">
+            <p>Farmers Connect — Thank My Farmer</p>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- dikw -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 10. FUNDAMENTOS DIKW -->
+<!-- ════════════════════════════════════════════ -->
 <section id="dikw">
-<div class="section-inner">
-        <div class="section-label">De datos a sabiduría</div>
-        <h2 class="section-title">La pirámide DIKW: De datos a decisiones</h2>
-        <p class="section-subtitle">Todo negocio digital exitoso transforma datos en sabiduría.</p>
-        <div class="stat-grid grid-4" style="margin-top:1rem;">
-            <div class="stat-box" style="border-color:#A8DADC;"><h4>📊 Datos</h4><p>"La mochila roja se vendió 15 veces esta semana"</p><small>Números crudos, sin contexto</small></div>
-            <div class="stat-box" style="border-color:var(--green-vintage);"><h4>ℹ️ Información</h4><p>"Las mochilas rojas se venden 3x más que las azules"</p><small>Datos organizados con contexto</small></div>
-            <div class="stat-box" style="border-color:var(--gold-vintage);"><h4>🧠 Conocimiento</h4><p>"Los compradores europeos prefieren colores vibrantes"</p><small>Patrones que explican el porqué</small></div>
-            <div class="stat-box" style="border-color:#E07A5F;"><h4>💡 Sabiduría</h4><p>"Producir más mochilas rojas y mostrarlas primero en la tienda online"</p><small>Acciones basadas en evidencia</small></div>
+    <div class="section-inner">
+        <div class="section-label">Fundamentos</div>
+        <h2 class="section-title">Del Dato a<br>la <span class="highlight">Sabiduría</span></h2>
+        <p class="section-subtitle">La jerarquía DIKW: el dato debe evolucionar hasta convertirse en conocimiento y sabiduría.</p>
+        <div class="stat-grid grid-4">
+            <div class="stat-box">
+                <div class="stat-number" style="color: var(--blue-vintage);">Dato</div>
+                <div class="stat-label">Hecho crudo, sin contexto</div>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">"150 mochilas", "$80.000"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="color: var(--green-vintage);">Información</div>
+                <div class="stat-label">Dato con contexto</div>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">"150 mochilas vendidas en diciembre por $80.000 c/u"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="color: var(--orange-vintage);">Conocimiento</div>
+                <div class="stat-label">Patrón descubierto</div>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">"Las mochilas rojas se venden 3x más en temporada navideña"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="color: var(--red-vintage);">Sabiduría</div>
+                <div class="stat-label">Decisión basada en conocimiento</div>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">"Producir doble de mochilas rojas desde octubre para Navidad"</p>
+            </div>
         </div>
-    </div>
-</section>
-
-
-<!-- forma-datos -->
-<section id="forma-datos">
-<div class="section-inner">
-        <div class="section-label">¿De dónde vienen los datos?</div>
-        <h2 class="section-title">¿Qué forma tienen los datos de tu negocio?</h2>
-        <div class="stat-grid grid-2">
-            <div class="stat-box"><h4>📝 Datos textuales</h4><p>Descripciones de productos, reseñas de clientes, mensajes de WhatsApp, publicaciones en Instagram, nombres de clientes</p></div>
-            <div class="stat-box"><h4>🔢 Datos numéricos</h4><p>Precios, cantidades vendidas, número de visitas a tu tienda online, tasa de conversión, ingresos mensuales</p></div>
-            <div class="stat-box"><h4>📊 Datos categóricos</h4><p>Categorías de productos (mochilas, hamacas, sal), región de procedencia, tipo de cliente (local, nacional, internacional)</p></div>
-            <div class="stat-box"><h4>📅 Datos temporales</h4><p>Fecha de cada venta, hora de mayor actividad en Instagram, estacionalidad de demanda</p></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- analisis -->
-<section id="analisis">
-<div class="section-inner">
-        <div class="section-label">Análisis</div>
-        <h2 class="section-title">Análisis de datos: De lo básico al avanzado</h2>
-        <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>📊 Descriptivo</h4><p>¿Qué pasó? Ventas del mes, productos más vendidos, clientes más frecuentes. Es el punto de partida.</p></div>
-            <div class="stat-box"><h4>🔍 Diagnóstico</h4><p>¿Por qué pasó? Las ventas bajaron en mayo porque hubo menos turistas en Riohacha. Las mochilas rojas se venden más.</p></div>
-            <div class="stat-box"><h4>🔮 Predictivo</h4><p>¿Qué pasará? En diciembre las ventas suben 40%. Debo producir más mochilas desde octubre.</p></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- bi -->
-<section id="bi">
-<div class="section-inner">
-        <div class="section-label">Business Intelligence</div>
-        <h2 class="section-title">Business Intelligence: Tu tablero de control</h2>
-        <p class="section-subtitle">Un dashboard te muestra en una sola pantalla todo lo que necesitas saber de tu negocio.</p>
-        <div class="stat-grid grid-2">
-            <div class="stat-box"><h4>📈 Google Analytics</h4><p>Gratuito. Muestra cuántas personas visitan tu tienda online, de dónde vienen y qué productos ven más.</p></div>
-            <div class="stat-box"><h4>📊 Looker Studio</h4><p>Gratis con Google. Crea dashboards visuales con datos de Instagram, Google Analytics y tu tienda online.</p></div>
-            <div class="stat-box"><h4>📉 Power BI</h4><p>Microsoft. Versión gratuita disponible. Ideal para análisis avanzado de ventas, inventario y márgenes.</p></div>
-            <div class="stat-box"><h4>📱 Meta Business Suite</h4><p>Gratis con Facebook/Instagram. Muestra engagement, alcance y conversiones de tus publicaciones.</p></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- datos-minuto -->
-<section id="datos-minuto">
-<div class="section-inner">
-        <div class="section-label">Datos en tiempo real</div>
-        <h2 class="section-title">¿Cuántos datos genera tu negocio por minuto?</h2>
-        <div class="stat-grid grid-3">
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2rem;color:var(--green-vintage);">~50</div><h4>Mensajes de WhatsApp/hora</h4><p>Consultas de precios, disponibilidad y envíos</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2rem;color:var(--green-vintage);">~100</div><h4>Visitas a Instagram/día</h4><p>Personas que ven tus publicaciones y stories</p></div>
-            <div class="stat-box" style="text-align:center;"><div style="font-size:2rem;color:var(--green-vintage);">~20</div><h4>Clics a tu tienda/día</h4><p>Personas interesadas que visitan tu catálogo</p></div>
-        </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <rect x="70" y="130" width="60" height="60" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="65" y="180" width="70" height="12" rx="3" fill="#457B9D" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="30" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="130" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="38" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="162" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M158 140 L175 125 L180 130 L163 145 Z" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="1.5"/>
-    <ellipse cx="100" cy="85" rx="30" ry="35" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M70 65 Q75 40 100 30 Q125 40 130 65" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M68 62 Q72 42 100 32 Q128 42 132 62" fill="#1D3557" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="82" y="78" width="36" height="14" rx="4" fill="#1A1A1A" opacity="0.12"/>
-    <rect x="84" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="104" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <circle cx="90" cy="84" r="2.5" fill="#1A1A1A"/>
-    <circle cx="110" cy="84" r="2.5" fill="#1A1A1A"/>
-    <path d="M92 95 Q100 100 108 95" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+        <div class="char-row" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    <rect x="55" y="95" width="90" height="95" rx="5" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M85 95 L100 140 L115 95" fill="white" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="25" y="105" width="35" height="20" rx="10" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <rect x="140" y="105" width="35" height="20" rx="10" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="30" cy="115" r="11" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="170" cy="115" r="11" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <ellipse cx="100" cy="62" rx="33" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M67 50 Q72 22 100 28 Q128 22 133 50" fill="#333" stroke="#1A1A1A" stroke-width="2.5"/>
+    <ellipse cx="87" cy="60" rx="12" ry="9" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <ellipse cx="113" cy="60" rx="12" ry="9" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="99" y1="60" x2="101" y2="60" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="87" cy="60" r="3" fill="#1A1A1A"/>
+    <circle cx="113" cy="60" r="3" fill="#1A1A1A"/>
+    <path d="M88 75 Q100 85 112 75" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <path d="M96 95 L100 128 L104 95" fill="#E63946" stroke="#1A1A1A" stroke-width="2"/>
 </svg>
             <div class="char-bubble">
                 <div class="char-name">📊 Analista de BI</div>
-                "Cada dato es una oportunidad. Si sabes que a las 7pm es cuando más gente ve tus publicaciones, programa tus posts para esa hora. Si sabes que las mochilas rojas se venden 3x más, produce más de ese color."
+                "Los datos sin análisis son como un libro cerrado. Con inteligencia de negocios los abrimos y descubrimos patrones que nos dicen exactamente qué producir y cuándo."
             </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- eda -->
-<section id="eda">
-<div class="section-inner">
-        <div class="section-label">EDA</div>
-        <h2 class="section-title">Análisis exploratorio de datos (EDA)</h2>
-        <p class="section-subtitle">Antes de hacer cualquier modelo de IA, necesitas explorar tus datos.</p>
-        <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>👀 Visualizar</h4><p>Gráficos de barras: ¿cuál producto se vende más? Histogramas: ¿cuánto gastan tus clientes en promedio?</p></div>
-            <div class="stat-box"><h4>📐 Estadísticas</h4><p>Promedio de ventas mensuales, mediana del valor de compra, desviación estándar de ingresos</p></div>
-            <div class="stat-box"><h4>🔗 Correlaciones</h4><p>¿Las publicaciones en Instagram correlacionan con ventas? ¿Hay estacionalidad en la demanda?</p></div>
+<!-- ════════════════════════════════════════════ -->
+<!-- 11. FORMA DE DATOS -->
+<!-- ════════════════════════════════════════════ -->
+<section id="forma-datos">
+    <div class="section-inner">
+        <div class="section-label">Naturaleza</div>
+        <h2 class="section-title">Forma de<br>los <span class="highlight">Datos</span></h2>
+        <div class="two-col">
+            <div class="stat-box">
+                <h4 style="color: var(--red-vintage);">📊 No Estructurados</h4>
+                <p>No siguen un formato predefinido.</p>
+                <ul style="padding-left: 1.5rem;"><li>Fotos de mochilas wayuu</li><li>Videos del proceso de tejido</li><li>Reseñas de clientes en Instagram</li><li>Mensajes de WhatsApp</li></ul>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--green-vintage);">📋 Estructurados</h4>
+                <p>Tienen un formato definido y organizado.</p>
+                <ul style="padding-left: 1.5rem;"><li>Excel de ventas mensuales</li><li>Inventario de productos</li><li>Precios por categoría</li><li>Datos de envío (Servientrega)</li></ul>
+            </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- ia -->
-<section id="ia">
-<div class="section-inner">
-        <div class="section-label">Inteligencia Artificial</div>
-        <h2 class="section-title">IA para tu negocio en La Guajira</h2>
-        <p class="section-subtitle">La inteligencia artificial no es solo para Silicon Valley. Desde Riohacha, puedes usar IA para automatizar, predecir y crecer.</p>
-        <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>🤖 Chatbots</h4><p>Responder consultas de clientes 24/7 por WhatsApp. "¿Tienen mochilas rojas?" → Respuesta automática.</p></div>
-            <div class="stat-box"><h4>📝 Generación de contenido</h4><p>ChatGPT escribe descripciones de productos, posts para Instagram, respuestas a reseñas.</p></div>
-            <div class="stat-box"><h4>🔮 Predicción de ventas</h4><p>Modelos de machine learning predicen cuánto venderás el próximo mes según datos históricos.</p></div>
+<!-- ════════════════════════════════════════════ -->
+<!-- 12. INTRODUCCIÓN AL ANÁLISIS DE DATOS -->
+<!-- ════════════════════════════════════════════ -->
+<section id="analisis">
+    <div class="section-inner">
+        <div class="section-label">Análisis</div>
+        <h2 class="section-title">Introducción al<br><span class="highlight">Análisis de Datos</span></h2>
+        <p class="section-subtitle">El proceso de examinar, limpiar, transformar y modelar datos para extraer información útil y respaldar la toma de decisiones.</p>
+        <div class="stat-grid grid-4">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🧹</div>
+                <p><strong>Limpiar</strong></p>
+                <p style="font-size: 0.8rem;">Eliminar errores, duplicados. Si los datos están sucios, las conclusiones serán erróneas.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🔄</div>
+                <p><strong>Transformar</strong></p>
+                <p style="font-size: 0.8rem;">Convertir datos crudos en formato útil: normalizar, agrupar, crear variables derivadas.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📈</div>
+                <p><strong>Modelar</strong></p>
+                <p style="font-size: 0.8rem;">Aplicar técnicas para encontrar patrones, relaciones y tendencias ocultas.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">💡</div>
+                <p><strong>Decidir</strong></p>
+                <p style="font-size: 0.8rem;">Convertir hallazgos en acciones. Los datos sin acción son solo curiosidad.</p>
+            </div>
         </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 13. INTELIGENCIA DE NEGOCIOS (BI) -->
+<!-- ════════════════════════════════════════════ -->
+<section id="bi">
+    <div class="section-inner">
+        <div class="section-label">BI</div>
+        <h2 class="section-title">Inteligencia<br>de <span class="highlight">Negocios</span></h2>
+        <p class="section-subtitle">Mejorar los procesos de toma de decisiones, proporcionando información sobre el rendimiento.</p>
+        <div class="stat-grid grid-4">
+            <div class="stat-box"><h4 style="color: var(--red-vintage);">📊 Marketing</h4><p>Analizar comportamiento de clientes para optimizar estrategias de venta en Instagram y WhatsApp.</p></div>
+            <div class="stat-box"><h4 style="color: var(--blue-vintage);">💰 Finanzas</h4><p>Control de costos de producción, margen por producto, flujo de caja de la cooperativa.</p></div>
+            <div class="stat-box"><h4 style="color: var(--green-vintage);">🚚 Logística</h4><p>Optimizar cadena de suministro desde Riohacha hasta el comprador final.</p></div>
+            <div class="stat-box"><h4 style="color: var(--purple-vintage);">📦 Inventario</h4><p>Saber qué colores y tamaños de mochilas se venden más y cuándo reabastecer.</p></div>
+        </div>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 14. DATOS CADA MINUTO -->
+<!-- ════════════════════════════════════════════ -->
+<section id="datos-minuto">
+    <div class="halftone-overlay"></div>
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="section-label">Contexto</div>
+        <h2 class="section-title">Datos Generándose<br><span class="highlight">Cada Minuto</span></h2>
+        <div class="burst" style="margin: 1rem auto 1.5rem; display: table;">¡DATOS!</div>
+        <div class="comic-stats">
+            <div class="comic-stat"><div class="num">500+</div><div class="label">Horas de video subidas a YouTube por minuto</div></div>
+            <div class="comic-stat"><div class="num" style="color: var(--red-vintage);">6M+</div><div class="label">Mensajes enviados por WhatsApp cada minuto</div></div>
+            <div class="comic-stat"><div class="num" style="color: var(--blue-vintage);">4M+</div><div class="label">Búsquedas en Google cada minuto</div></div>
+        </div>
+        <div class="char-row" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
     <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
     <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
     <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
@@ -862,221 +916,455 @@
 </svg>
             <div class="char-bubble">
                 <div class="char-name">🧙 Mago de los Datos</div>
-                "No necesitas ser programador para usar IA. Necesitas curiosidad. ChatGPT, Canva, Gemini... todas son gratuitas y funcionan desde el celular. La IA es tu asistente personal, disponible 24/7."
+                "¡Cada minuto se generan millones de gigabytes! El verdadero poder no está en la cantidad, sino en convertir ese océano de datos en decisiones inteligentes para tu negocio en La Guajira."
             </div>
+        </div>
+        <p class="source" style="text-align:center;">Fuente: <a href="https://es.statista.com" target="_blank">Statista</a></p>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 15. ANÁLISIS EXPLORATORIO (EDA) -->
+<!-- ════════════════════════════════════════════ -->
+<section id="eda">
+    <div class="section-inner">
+        <div class="section-label">EDA</div>
+        <h2 class="section-title">Análisis Exploratorio<br>de <span class="highlight">Datos</span></h2>
+        <p class="section-subtitle">La ciencia de datos es el proceso de formular preguntas cuantitativas que pueden ser resueltas con datos.</p>
+        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; font-family: 'Bangers', cursive;">Hacer las Preguntas Correctas:</h3>
+        <div class="stat-grid grid-4">
+            <div class="stat-box"><h4 style="color: var(--blue-vintage);">Descriptivas</h4><p>¿Cuántas mochilas wayuu se vendieron el mes pasado?</p></div>
+            <div class="stat-box"><h4 style="color: var(--green-vintage);">Exploratorias</h4><p>¿Qué colores de mochila se venden más en temporada navideña?</p></div>
+            <div class="stat-box"><h4 style="color: var(--orange-vintage);">Inferenciales</h4><p>¿Si bajo el precio un 10%, cuánto aumentarán las ventas?</p></div>
+            <div class="stat-box"><h4 style="color: var(--red-vintage);">Predictivas</h4><p>¿Cuántas sal de Manaure se venderán en el próximo trimestre?</p></div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- modelo -->
-<section id="modelo">
-<div class="section-inner">
-        <div class="section-label">Machine Learning</div>
-        <h2 class="section-title">¿Cómo funciona un modelo de Machine Learning?</h2>
-        <p class="section-subtitle">Un modelo de ML aprende de datos históricos para hacer predicciones sobre el futuro.</p>
-        <div class="stat-grid grid-4">
-            <div class="stat-box"><h4>1. Datos</h4><p>Historial de ventas de los últimos 2 años: qué producto, cuándo, a quién, cuánto.</p></div>
-            <div class="stat-box"><h4>2. Entrenamiento</h4><p>El algoritmo encuentra patrones: "en diciembre las mochilas se venden 40% más"</p></div>
-            <div class="stat-box"><h4>3. Predicción</h4><p>"Para diciembre 2026, espera vender 120 mochilas rojas y 60 azules"</p></div>
-            <div class="stat-box"><h4>4. Acción</h4><p>Produce más en octubre-noviembre. No te quedes sin stock en temporada alta.</p></div>
+<!-- ════════════════════════════════════════════ -->
+<!-- 16. ¿CÓMO FUNCIONA LA IA? -->
+<!-- ════════════════════════════════════════════ -->
+<section id="ia">
+    <div class="section-inner">
+        <div class="section-label">IA</div>
+        <h2 class="section-title">¿Cómo Funciona<br>la <span class="highlight">IA</span>?</h2>
+        <div class="stat-grid grid-3">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📈</div>
+                <h4>Regresión Lineal</h4>
+                <p>Encuentra la línea que mejor se ajusta a tus datos. <strong>Predice ventas, estima precios.</strong></p>
+                <p style="font-size: 0.8rem; color: var(--ink-faded); margin-top: 0.5rem;">Si vendes 50 mochilas a $60K y 100 a $50K, te dice cuánto vender a $55K.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🧠</div>
+                <h4>Red Neuronal</h4>
+                <p>Múltiples conexiones para patrones complejos. <strong>Reconoce imágenes, clasifica productos.</strong></p>
+                <p style="font-size: 0.8rem; color: var(--ink-faded); margin-top: 0.5rem;">Distingue mochila wayuu auténtica de imitación con una foto.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">💬</div>
+                <h4>LLM</h4>
+                <p>Red neuronal gigante que predice el siguiente texto. <strong>Genera contenido, traduce, responde.</strong></p>
+                <p style="font-size: 0.8rem; color: var(--ink-faded); margin-top: 0.5rem;">ChatGPT, Claude, Gemini funcionan así.</p>
+            </div>
         </div>
+        <p style="margin-top: 1.5rem; text-align: center; font-size: 1rem; color: var(--ink-faded);"><strong>No necesitas entender las matemáticas.</strong> Solo saber <strong>cuándo aplicar cada herramienta</strong> en tu negocio.</p>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 17. MODELO vs ASISTENTE vs AGENTE -->
+<!-- ════════════════════════════════════════════ -->
+<section id="modelo">
+    <div class="section-inner">
+        <div class="section-label">Conceptos</div>
+        <h2 class="section-title">Modelo, Asistente<br>y <span class="highlight">Agente IA</span></h2>
+        <div style="overflow-x: auto;">
+            <table class="comp-table">
+                <thead>
+                    <tr><th>Característica</th><th>Modelo</th><th>Asistente</th><th>Agente</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Rol</strong></td><td>Generar datos</td><td>Conversar / Ayudar</td><td>Actuar / Resolver</td></tr>
+                    <tr><td><strong>Autonomía</strong></td><td>Nula (necesita prompt)</td><td>Baja (reactivo)</td><td>Alta (proactivo)</td></tr>
+                    <tr><td><strong>Ejemplo</strong></td><td>GPT-4o, Claude</td><td>ChatGPT, Gemini</td><td>AutoGPT</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin-top: 1rem; text-align: center; display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <span class="badge badge-violet">Modelo: "Dime qué es X"</span>
+            <span class="badge badge-green">Asistente: "Escríbeme algo sobre X"</span>
+            <span class="badge badge-orange">Agente: "Investiga X, escríbelo y envíalo"</span>
+        </div>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 18. ACTIVIDAD 1: DESCRIPCIONES CON IA -->
+<!-- ════════════════════════════════════════════ -->
+<section id="act1">
+    <div class="section-inner">
+        <div class="section-label">Actividad 1</div>
+        <h2 class="section-title">Descripciones de Producto<br><span class="highlight">con IA</span></h2>
+        <p class="section-subtitle">Vamos a usar <strong>ChatGPT</strong> para crear descripciones profesionales de tus productos. Es gratis y funciona desde el celular.</p>
         <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <rect x="70" y="130" width="60" height="60" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="65" y="180" width="70" height="12" rx="3" fill="#457B9D" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="30" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="130" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="38" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="162" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M158 140 L175 125 L180 130 L163 145 Z" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="1.5"/>
-    <ellipse cx="100" cy="85" rx="30" ry="35" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M70 65 Q75 40 100 30 Q125 40 130 65" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M68 62 Q72 42 100 32 Q128 42 132 62" fill="#1D3557" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="82" y="78" width="36" height="14" rx="4" fill="#1A1A1A" opacity="0.12"/>
-    <rect x="84" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="104" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <circle cx="90" cy="84" r="2.5" fill="#1A1A1A"/>
-    <circle cx="110" cy="84" r="2.5" fill="#1A1A1A"/>
-    <path d="M92 95 Q100 100 108 95" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
+    <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
+    <path d="M95 160 L98 155 L101 160 L98 165 Z" fill="#F4D35E"/>
+    <rect x="25" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <rect x="140" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="30" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="170" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="170" y1="114" x2="190" y2="75" stroke="#8B4513" stroke-width="3"/>
+    <path d="M188 70 L190 65 L192 70 L197 72 L192 74 L190 79 L188 74 L183 72 Z" fill="#F4D35E" stroke="#1A1A1A" stroke-width="1"/>
+    <ellipse cx="100" cy="62" rx="32" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M65 42 L100 5 L135 42" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <ellipse cx="100" cy="42" rx="42" ry="8" fill="#1D3557" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="68" y="38" width="64" height="5" rx="1" fill="#F4D35E"/>
+    <path d="M78 75 Q85 105 100 108 Q115 105 122 75" fill="white" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="88" cy="60" r="3.5" fill="#1A1A1A"/>
+    <circle cx="112" cy="60" r="3.5" fill="#1A1A1A"/>
+    <path d="M90 72 Q100 78 110 72" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
 </svg>
             <div class="char-bubble">
-                <div class="char-name">📊 Analista de BI</div>
-                "El modelo no es magia. Son matemáticas. Pero las matemáticas bien aplicadas pueden ayudarte a no quedarte sin stock en temporada alta y a no producir de más en temporada baja. Eso se llama optimización."
+                <div class="char-name">🧙 Mago de los Datos</div>
+                "La diferencia no es el producto. Es cómo lo cuentas. Una mochila wayuu descrita como 'tejido colorido' vale $40.000. Descrita como 'herencia ancestral tejida a mano durante 3 semanas con patrones Kanaas que cuentan la historia del desierto guajiro' vale $200.000. ¡La IA te ayuda a contar esa historia!"
+            </div>
+        </div>
+        <div class="prompt-box" style="margin-top: 1rem;">Actúa como experto en marketing digital para ecommerce colombiano.
+Escribe una descripción de producto atractiva, emocional y
+persuasiva para vender:
+
+PRODUCTO: [describe tu producto aquí — ej: mochila wayuu]
+PÚBLICO: [a quién se lo quieres vender]
+DIFERENCIADOR: [qué tiene de especial, de dónde viene]
+
+Incluye:
+1. Un título llamativo (máximo 8 palabras)
+2. Descripción emocional de 3-4 líneas
+3. 5 características clave con beneficios
+4. Un llamado a la acción urgente
+
+Tono: cercano, auténtico, colombiano.</div>
+        <div class="two-col" style="margin-top: 1rem;">
+            <div>
+                <p style="font-family: 'Bangers', cursive; font-size: 0.85rem; margin-bottom: 0.3rem;">❌ Sin IA (descripción aburrida):</p>
+                <div class="prompt-box" style="border-color: var(--red-vintage);">Mochila wayuu colorida.
+Hecha en Uribia. Precio: $80.000.</div>
+            </div>
+            <div>
+                <p style="font-family: 'Bangers', cursive; font-size: 0.85rem; margin-bottom: 0.3rem;">✅ Con ChatGPT (descripción que vende):</p>
+                <div class="prompt-box" style="border-color: var(--green-vintage);">🧶 Mochila Wayuu Kanaas — Herencia Ancestral
+
+Cada puntada cuenta la historia del desierto guajiro.
+Tejida a mano por artesanas de Uribia durante 3
+semanas, con patrones tradicionales que representan
+los caminos del viento y las estrellas.
+
+✨ Tejido 100% manual con algodón natural
+✨ Patrones Kanaas únicos de la cultura Wayuu
+✨ Comercio justo directo con artesanas de La Guajira
+✨ Cada pieza es irrepetible — no hay dos iguales
+
+👉 Lleva un pedazo de La Guajira contigo.</div>
+            </div>
+        </div>
+        <div class="qr-container">
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://chat.openai.com&color=1D3557" alt="QR ChatGPT">
+            <p>🤖 ChatGPT — chat.openai.com</p>
+        </div>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 19. ACTIVIDAD 2: FOTOS DE PRODUCTO -->
+<!-- ════════════════════════════════════════════ -->
+<section id="act2">
+    <div class="section-inner">
+        <div class="section-label">Actividad 2</div>
+        <h2 class="section-title">Fotos de Producto<br><span class="highlight">Profesionales</span></h2>
+        <p class="section-subtitle">Paso 1: Quitar el fondo con <strong>Remove.bg</strong>. Paso 2: Diseño profesional con <strong>Canva</strong>.</p>
+        <div class="step-list">
+            <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Toma la foto</strong> — Con luz natural (cerca de una ventana). Fondo simple: una mesa, pared blanca. No necesitas estudio.</div></div>
+            <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Ve a Remove.bg</strong> — Sube tu foto. En 3 segundos la IA quita el fondo automáticamente.</div></div>
+            <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Descarga</strong> — Se guarda como PNG con fondo transparente.</div></div>
+            <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Abre Canva</strong> — Crea un diseño Instagram (1080x1080). Agrega fondo (wood texture, minimal). Sube tu producto sin fondo.</div></div>
+            <div class="step"><div class="step-num">5</div><div class="step-text"><strong>Agrega texto y descarga</strong> — Nombre del producto, precio. Descarga PNG. ¡Lista para Instagram!</div></div>
+        </div>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 1.5rem;">
+            <div class="qr-container">
+                <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.remove.bg&color=1D3557" alt="QR Remove.bg">
+                <p>🖼️ Remove.bg</p>
+            </div>
+            <div class="qr-container">
+                <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.canva.com&color=1D3557" alt="QR Canva">
+                <p>🎨 Canva</p>
             </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- act1 -->
-<section id="act1">
-<div class="section-inner">
-        <div class="section-label">Actividad 1</div>
-        <h2 class="section-title">Descripciones de producto con IA</h2>
-        <p class="section-subtitle">Vamos a usar <strong>ChatGPT</strong> para crear descripciones profesionales de productos guajiros. Es gratis y funciona desde el celular.</p>
-        <div class="qr-grid">
-            <div class="qr-item"><img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://chat.openai.com&color=EDE4D3" alt="QR ChatGPT"><p><strong>ChatGPT</strong><br>chat.openai.com</p></div>
-        </div>
-        <div class="comp-table">
-            <div class="comp-step"><span class="step-num">1</span><div><h4>Abre ChatGPT en tu celular</h4><p>Ve a chat.openai.com o descarga la app "ChatGPT". Inicia sesión con Google.</p></div></div>
-            <div class="comp-step"><span class="step-num">2</span><div><h4>Copia y pega este prompt:</h4></div></div>
-        </div>
-        <div class="prompt-box">Actúa como experto en marketing digital para ecommerce colombiano.
-Escribe una descripción de producto atractiva y persuasiva para:
-PRODUCTO: Mochila Wayuu tejida a mano
-PÚBLICO: Mujeres europeas de 25-45 años
-DIFERENCIADOR: Tradición ancestral wayuu, cada pieza es única, 20 días de tejido
-Incluye: título llamativo, descripción emocional, 5 características y llamado a la acción.
-Tono: cercano, auténtico, colombiano.</div>
-        <div class="comp-table">
-            <div class="comp-step"><span class="step-num">3</span><div><h4>Presiona "Enviar"</h4><p>ChatGPT generará la descripción en 3-5 segundos. Si no te convence, dile: "Hazlo más emocional".</p></div></div>
-            <div class="comp-step"><span class="step-num">4</span><div><h4>Copia el resultado</h4><p>Mantén presionado sobre el texto y dale "Copiar". ¡Listo para tu tienda online!</p></div></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- act2 -->
-<section id="act2">
-<div class="section-inner">
-        <div class="section-label">Actividad 2</div>
-        <h2 class="section-title">Fotos profesionales de producto</h2>
-        <p class="section-subtitle">Paso 1: Quitar el fondo con <strong>Remove.bg</strong>. Paso 2: Diseño con <strong>Canva</strong>.</p>
-        <div class="qr-grid">
-            <div class="qr-item"><img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.remove.bg&color=EDE4D3" alt="QR Remove.bg"><p><strong>Remove.bg</strong><br>remove.bg</p></div>
-            <div class="qr-item"><img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.canva.com&color=EDE4D3" alt="QR Canva"><p><strong>Canva</strong><br>canva.com</p></div>
-        </div>
-        <div class="comp-table">
-            <div class="comp-step"><span class="step-num">1</span><div><h4>Toma la foto de tu producto</h4><p>Con luz natural, fondo simple (mesa, pared blanca). No necesitas estudio fotográfico.</p></div></div>
-            <div class="comp-step"><span class="step-num">2</span><div><h4>Ve a Remove.bg y sube tu foto</h4><p>En 3 segundos, la IA quita el fondo automáticamente. Descarga la imagen PNG.</p></div></div>
-            <div class="comp-step"><span class="step-num">3</span><div><h4>Abre Canva y crea un diseño</h4><p>"Crear diseño" → "Post de Instagram" (1080x1080). Agrega un fondo bonito.</p></div></div>
-            <div class="comp-step"><span class="step-num">4</span><div><h4>Sube tu producto sin fondo y ajusta</h4><p>"Subidos" → selecciona la imagen de Remove.bg. Arrastra al lienzo. Agrega texto y precio.</p></div></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- act3 -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 20. ACTIVIDAD 3: MARCA Y NOMBRE -->
+<!-- ════════════════════════════════════════════ -->
 <section id="act3">
-<div class="section-inner">
+    <div class="section-inner">
         <div class="section-label">Actividad 3</div>
-        <h2 class="section-title">Nombre de marca + Logo con IA</h2>
-        <p class="section-subtitle">¿No tienes nombre para tu marca? ChatGPT te genera opciones. Y Canva crea el logo.</p>
-        <div class="comp-table">
-            <div class="comp-step"><span class="step-num">1</span><div><h4>Genera nombres con ChatGPT:</h4></div></div>
-        </div>
-        <div class="prompt-box">Necesito 10 nombres creativos para una marca de artesanías
-que viene de La Guajira, Colombia.
+        <h2 class="section-title">Nombre de Marca<br><span class="highlight">con IA</span></h2>
+        <p class="section-subtitle">¿No tienes nombre para tu marca? ChatGPT te genera opciones en segundos.</p>
+        <div class="prompt-box">Necesito 10 nombres creativos para una marca de
+[producto] que viene de La Guajira, Colombia.
 
 Debe:
 - Sonar colombiano y auténtico
 - Ser fácil de recordar y pronunciar
-- Transmitir tradición y calidad wayuu
+- Transmitir tradición y calidad
 - Estar disponible como @ en Instagram
 
 Incluye el significado de cada nombre.</div>
-        <div class="comp-table">
-            <div class="comp-step"><span class="step-num">2</span><div><h4>Crea tu logo en Canva:</h4><p>Busca "Logo" → Elige plantilla → Cambia texto y colores → Descarga PNG transparente.</p></div></div>
+        <div class="caption-box" style="margin-top: 1rem;">
+            <strong>Ejemplos para La Guajira:</strong> "Alma Wayuu" · "Sal del Desierto" · "Manaure Vivo" · "Jepirachi Artesanal" · "Río Ancho Textiles" · "Uribia Original" · "Kashala Wayuu"
         </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
-    <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
-    <path d="M95 160 L98 155 L101 160 L98 165 Z" fill="#F4D35E"/>
-    <rect x="25" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="140" y="105" width="35" height="18" rx="9" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="30" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="170" cy="114" r="10" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <line x1="170" y1="114" x2="190" y2="75" stroke="#8B4513" stroke-width="3"/>
-    <path d="M188 70 L190 65 L192 70 L197 72 L192 74 L190 79 L188 74 L183 72 Z" fill="#F4D35E" stroke="#1A1A1A" stroke-width="1"/>
-    <ellipse cx="100" cy="62" rx="32" ry="38" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M65 42 L100 5 L135 42" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
-    <ellipse cx="100" cy="42" rx="42" ry="8" fill="#1D3557" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="68" y="38" width="64" height="5" rx="1" fill="#F4D35E"/>
-    <path d="M78 75 Q85 105 100 108 Q115 105 122 75" fill="white" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="88" cy="60" r="3.5" fill="#1A1A1A"/>
-    <circle cx="112" cy="60" r="3.5" fill="#1A1A1A"/>
-    <path d="M90 72 Q100 78 110 72" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-</svg>
-            <div class="char-bubble">
-                <div class="char-name">🧙 Mago de los Datos</div>
-                "Tu marca no necesita ser perfecta desde el día uno. Necesita existir. Empieza con lo que tienes y perfecciona sobre la marcha. Lo importante es que el mundo vea lo que tienes para ofrecer."
-            </div>
+        <h3 style="font-family: 'Bangers', cursive; font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">Logo con Canva (gratis)</h3>
+        <div class="step-list">
+            <div class="step"><div class="step-num">1</div><div class="step-text">En Canva busca <strong>"Logo"</strong> → Elige plantilla → Personaliza con tu nombre y colores → Descarga PNG con fondo transparente.</div></div>
         </div>
+        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--ink-faded);">✅ <strong>Tip:</strong> Tu logo no necesita ser perfecto. Necesitas empezar. Lo perfeccionas después.</p>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- marketing -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 21. MARKETING DIGITAL -->
+<!-- ════════════════════════════════════════════ -->
 <section id="marketing">
-<div class="section-inner">
-        <div class="section-label">Marketing digital</div>
-        <h2 class="section-title">Marketing digital sin presupuesto desde Riohacha</h2>
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="section-label">Marketing</div>
+        <h2 class="section-title">Marketing Digital<br><span class="highlight">sin Presupuesto</span></h2>
         <p class="section-subtitle">No necesitas pagar publicidad para empezar. Necesitas <strong>constancia, contenido y conexión.</strong></p>
         <div class="stat-grid grid-3">
-            <div class="stat-box"><h4>📱 WhatsApp Business</h4><p>Tu tienda en el bolsillo. Catálogo de productos, mensajes automáticos, etiquetas para organizar clientes. 95% de colombianos lo usan.</p></div>
-            <div class="stat-box"><h4>📸 Instagram Business</h4><p>Tu vitrina visual. Cuenta profesional con estadísticas, programación y botón de contacto. Gratis.</p></div>
-            <div class="stat-box"><h4>🔍 Google (SEO)</h4><p>Que te encuentren cuando busquen "mochilas wayuu" o "sal de Manaure". Gratis y permanente.</p></div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📱</div>
+                <h4>Redes Sociales</h4>
+                <p>Instagram, TikTok, WhatsApp. Tu vitrina digital gratuita.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🤖</div>
+                <h4>IA para Contenido</h4>
+                <p>ChatGPT escribe tus posts. Canva diseña. Un asistente gratis 24/7.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🔍</div>
+                <h4>Google (SEO)</h4>
+                <p>Que te encuentren cuando busquen "mochilas wayuu" o "sal de Manaure".</p>
+            </div>
         </div>
-        <div class="qr-grid">
-            <div class="qr-item"><img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.whatsapp.com/business&color=EDE4D3" alt="QR WhatsApp"><p><strong>WhatsApp Business</strong><br>whatsapp.com/business</p></div>
-            <div class="qr-item"><img class="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com&color=EDE4D3" alt="QR Instagram"><p><strong>Instagram</strong><br>instagram.com</p></div>
+
+        <h3 style="font-family: 'Bangers', cursive; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">WhatsApp Business: Tu tienda en el bolsillo</h3>
+        <p class="section-subtitle">El 95% de los colombianos usa WhatsApp. Tu tienda puede vivir ahí.</p>
+        <div class="step-list">
+            <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Descarga WhatsApp Business</strong> — Es gratis. Puedes tener las dos apps en el mismo celular.</div></div>
+            <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Completa tu perfil</strong> — Logo, descripción, dirección (Riohacha), horario, fotos.</div></div>
+            <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Crea tu catálogo</strong> — Sube fotos (las que hiciste en Canva), precios, descripciones (las que generó ChatGPT).</div></div>
+            <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Mensajes automáticos</strong> — Saludo de bienvenida, mensaje fuera de horario, confirmación de pedido.</div></div>
+            <div class="step"><div class="step-num">5</div><div class="step-text"><strong>Etiquetas</strong> — "Nuevo cliente", "Pedido pendiente", "Pagado", "Enviado", "Entregado".</div></div>
+        </div>
+        <div class="qr-container" style="margin-top: 1.5rem;">
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.whatsapp.com/business&color=1D3557" alt="QR WhatsApp Business">
+            <p>📱 WhatsApp Business</p>
+        </div>
+
+        <h3 style="font-family: 'Bangers', cursive; font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">Instagram Business: Tu vitrina visual</h3>
+        <p class="section-subtitle">Instagram es la red #1 para vender productos visuales como mochilas y artesanías.</p>
+        <div class="step-list">
+            <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Cuenta de negocio</strong> — Ajustes → Cambiar a cuenta profesional → Negocio.</div></div>
+            <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Optimiza tu perfil</strong> — Bio: "Mochilas wayuu artesanales de La Guajira 🧶 | Envíos a toda Colombia 📦 | Pedidos por WhatsApp 👇"</div></div>
+            <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Tu primera publicación</strong> — Usa la foto de Canva + descripción de ChatGPT + hashtags.</div></div>
+            <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Historias diarias</strong> — Fotos del proceso de tejido, detrás de cámaras, testimonios.</div></div>
+        </div>
+        <div class="qr-container" style="margin-top: 1.5rem;">
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.instagram.com&color=1D3557" alt="QR Instagram">
+            <p>📸 Instagram</p>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- pagos -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 22. PAGOS Y ENVÍOS -->
+<!-- ════════════════════════════════════════════ -->
 <section id="pagos">
-<div class="section-inner">
-        <div class="section-label">Pagos y envíos</div>
-        <h2 class="section-title">¿Cómo cobrar y enviar desde La Guajira?</h2>
-        <div class="stat-grid grid-2">
-            <div class="stat-box"><h4>💳 Pasarelas de pago</h4><p><strong>Wompi</strong> (Bancolombia), <strong>Mercado Pago</strong>, <strong>ePayco</strong>: aceptan tarjetas PSE y transferencias. El dinero llega a tu cuenta bancaria.</p></div>
-            <div class="stat-box"><h4>📦 Envíos nacionales</h4><p><strong>Servientrega</strong>, <strong>Coordinadora</strong>, <strong>Interrapidisimo</strong>: recogen en Riohacha y entregan a toda Colombia. Tienen tarifas para pymes.</p></div>
-            <div class="stat-box"><h4>🌍 Envíos internacionales</h4><p><strong>DHL</strong>, <strong>FedEx</strong>: para envíos a Europa y USA. <strong>4-72</strong> tiene convenio internacional para artesanías.</p></div>
-            <div class="stat-box"><h4>💰 PayPal / Stripe</h4><p>Para recibir pagos internacionales. El comprador paga en su moneda, tú recibes en pesos colombianos.</p></div>
+    <div class="section-inner">
+        <div class="section-label">Pagos y Envíos</div>
+        <h2 class="section-title">Cobra Fácil,<br><span class="highlight">Envía Lejos</span></h2>
+        <p class="section-subtitle">De nada sirve vender si no puedes cobrar ni enviar. Aquí están las herramientas.</p>
+        <div class="stat-grid grid-3">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📲</div>
+                <h4>Nequi</h4>
+                <p>Billetera digital de Bancolombia. Recibe y envía dinero al instante. Solo necesitas cédula y celular.</p>
+                <p><a href="https://www.nequi.com.co" target="_blank">nequi.com.co</a></p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">💳</div>
+                <h4>MercadoPago</h4>
+                <p>Links de pago profesionales. Cobra con tarjeta, PSE o efectivo. Comisión ~5%.</p>
+                <p><a href="https://www.mercadopago.com.co" target="_blank">mercadopago.com.co</a></p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📦</div>
+                <h4>Servientrega</h4>
+                <p>Cobertura nacional desde Riohacha. Recogen en tu casa. Rastreo en línea.</p>
+                <p><a href="https://www.servientrega.com" target="_blank">servientrega.com</a></p>
+            </div>
+        </div>
+        <div class="stat-grid grid-3" style="margin-top: 1rem;">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2rem;">🚀</div>
+                <p><strong>Interrapidísimo</strong><br>Envíos express nacionales. Oficina en Riohacha.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2rem;">✈️</div>
+                <p><strong>DHL / FedEx</strong><br>Envíos internacionales para ventas al exterior.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2rem;">📍</div>
+                <p><strong>Google Perfil de Negocio</strong><br>Aparece en Google Maps cuando busquen "artesanías Riohacha".</p>
+                <p><a href="https://www.google.com/business/" target="_blank">google.com/business</a></p>
+            </div>
         </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- herramientas -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 23. HERRAMIENTAS CON QR -->
+<!-- ════════════════════════════════════════════ -->
 <section id="herramientas">
-<div class="section-inner">
+    <div class="section-inner">
         <div class="section-label">Herramientas</div>
-        <h2 class="section-title">Resumen: Todas las herramientas que necesitas</h2>
-        <table class="tools-table">
-            <thead><tr><th>Herramienta</th><th>Función</th><th>Precio</th><th>QR</th></tr></thead>
-            <tbody>
-                <tr><td>🤖 <strong>ChatGPT</strong></td><td>Descripciones, textos, prompts</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://chat.openai.com&color=EDE4D3"></td></tr>
-                <tr><td>🌟 <strong>Google Gemini</strong></td><td>Alternativa a ChatGPT</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://gemini.google.com&color=EDE4D3"></td></tr>
-                <tr><td>🎨 <strong>Canva</strong></td><td>Diseño de fotos y logo</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://canva.com&color=EDE4D3"></td></tr>
-                <tr><td>🖼️ <strong>Remove.bg</strong></td><td>Quitar fondos de fotos</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://remove.bg&color=EDE4D3"></td></tr>
-                <tr><td>📱 <strong>WhatsApp Business</strong></td><td>Tienda y catálogo</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://whatsapp.com/business&color=EDE4D3"></td></tr>
-                <tr><td>📸 <strong>Instagram</strong></td><td>Vitrina visual</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://instagram.com&color=EDE4D3"></td></tr>
-                <tr><td>💳 <strong>Wompi</strong></td><td>Pagos en línea</td><td>Comisión</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://wompi.co&color=EDE4D3"></td></tr>
-                <tr><td>📊 <strong>Looker Studio</strong></td><td>Dashboards BI</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://lookerstudio.google.com&color=EDE4D3"></td></tr>
-                <tr><td>🔗 <strong>OpenChain</strong></td><td>Blockchain trazabilidad</td><td>Gratis</td><td><img class="mini-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://openchain.org&color=EDE4D3"></td></tr>
-            </tbody>
-        </table>
+        <h2 class="section-title">Todas las Herramientas<br><span class="highlight">del Taller</span></h2>
+        <p class="section-subtitle">📸 <strong>Toma foto a esta pantalla.</strong> Todos los QR están aquí.</p>
+        <div class="qr-grid">
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://chat.openai.com" alt="ChatGPT">
+                <span>ChatGPT</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://gemini.google.com" alt="Gemini">
+                <span>Gemini</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.remove.bg" alt="Remove.bg">
+                <span>Remove.bg</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.canva.com" alt="Canva">
+                <span>Canva</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.whatsapp.com/business" alt="WhatsApp">
+                <span>WhatsApp B.</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.instagram.com" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com/business/" alt="Google Negocio">
+                <span>Google Negocio</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.mercadopago.com.co" alt="MercadoPago">
+                <span>MercadoPago</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.nequi.com.co" alt="Nequi">
+                <span>Nequi</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.bing.com/create" alt="Bing">
+                <span>Bing Creator</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.vechain.org" alt="VeChain">
+                <span>VeChain</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.provenance.org" alt="Provenance">
+                <span>Provenance</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://origintrail.io" alt="OriginTrail">
+                <span>OriginTrail</span>
+            </div>
+            <div class="qr-item">
+                <img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.servientrega.com" alt="Servientrega">
+                <span>Servientrega</span>
+            </div>
+        </div>
     </div>
 </section>
 
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+    <div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div>
+</div>
 
-<!-- contacto -->
+<!-- ════════════════════════════════════════════ -->
+<!-- 24. CONTACTO -->
+<!-- ════════════════════════════════════════════ -->
 <section id="contacto">
-<div class="section-inner">
+    <div class="halftone-overlay"></div>
+    <div class="action-lines"></div>
+    <div class="section-inner" style="text-align: center;">
         <div class="section-label">Contacto</div>
-        <h2 class="section-title">¿Listo para llevar tu negocio al mundo?</h2>
-        <p class="section-subtitle">La tecnología está al alcance de todos. Desde Riohacha, La Guajira, puedes vender al mundo entero.<br><strong>Sin vitrina física. Sin fronteras. Sin límite.</strong></p>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="section-title">De La Guajira<br><span class="highlight">al Mundo</span></h2>
+        <div class="caption-box" style="max-width: 700px; margin: 1.5rem auto; transform: rotate(0deg);">
+            <strong>Tu Plan en 7 Días:</strong><br>
+            Día 1: Define qué vendes y a quién · Día 2: WhatsApp Business + catálogo ·
+            Día 3: ChatGPT para 5 descripciones · Día 4: Fotos con Remove.bg + Canva ·
+            Día 5: Abre Instagram + primer post · Día 6: Configura Nequi + MercadoPago ·
+            Día 7: Primera venta. Primer envío. 🎉
+        </div>
+        <p class="section-subtitle"><strong>No necesitas hacerlo perfecto. Necesitas hacerlo.</strong></p>
+        <div class="char-row" style="justify-content: center;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
     <path d="M60 95 L45 190 L155 190 L140 95 Z" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
     <path d="M85 120 L88 115 L91 120 L88 125 Z" fill="#F4D35E"/>
     <path d="M115 140 L118 135 L121 140 L118 145 Z" fill="#F4D35E"/>
@@ -1098,63 +1386,39 @@ Incluye el significado de cada nombre.</div>
 </svg>
             <div class="char-bubble">
                 <div class="char-name">🧙 Mago de los Datos</div>
-                "No necesitas ser experto en tecnología. Necesitas empezar. Cada herramienta que vimos hoy es gratuita y funciona desde tu celular. El mundo está esperando ver lo que La Guajira tiene para ofrecer."
+                "¡El viento de Jepirachi lleva las velas de los barcos al mundo! Que tus productos viajen con la misma fuerza. Desde La Guajira, con blockchain, IA y mucho corazón. ¡Vamos!"
             </div>
         </div>
-        <div class="char-row">
-            
-<svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
-    <rect x="70" y="130" width="60" height="60" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="65" y="180" width="70" height="12" rx="3" fill="#457B9D" stroke="#1A1A1A" stroke-width="2"/>
-    <rect x="30" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <rect x="130" y="135" width="40" height="16" rx="8" fill="#A8DADC" stroke="#1A1A1A" stroke-width="3"/>
-    <circle cx="38" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <circle cx="162" cy="143" r="9" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M158 140 L175 125 L180 130 L163 145 Z" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="1.5"/>
-    <ellipse cx="100" cy="85" rx="30" ry="35" fill="#FFD5B4" stroke="#1A1A1A" stroke-width="3"/>
-    <path d="M70 65 Q75 40 100 30 Q125 40 130 65" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2"/>
-    <path d="M68 62 Q72 42 100 32 Q128 42 132 62" fill="#1D3557" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="82" y="78" width="36" height="14" rx="4" fill="#1A1A1A" opacity="0.12"/>
-    <rect x="84" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <rect x="104" y="80" width="12" height="8" rx="2" fill="#A8DADC" stroke="#1A1A1A" stroke-width="1"/>
-    <circle cx="90" cy="84" r="2.5" fill="#1A1A1A"/>
-    <circle cx="110" cy="84" r="2.5" fill="#1A1A1A"/>
-    <path d="M92 95 Q100 100 108 95" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-</svg>
-            <div class="char-bubble">
-                <div class="char-name">📊 Analista de BI</div>
-                "Recuerda: los datos son tu mejor aliado. Mide, analiza, ajusta. Cada venta, cada visita, cada clic te dice algo sobre tu cliente. Escucha lo que te dicen."
-            </div>
-        </div>
-        <div style="text-align:center;margin-top:2rem;">
-            <p style="font-size:1.2rem;">📧 anclopezg@udistrital.edu.co · 📱 305 724 7518</p>
-            <p style="font-size:0.9rem;opacity:0.7;margin-top:0.5rem;">Colombia 5.0 · MinTIC · La Guajira, Riohacha</p>
-        </div>
-        <div style="text-align:center;margin-top:1.5rem;">
-            <a href="#hero" class="comic-btn green">↑ Volver al inicio</a>
-        </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--ink-faded);">Colombia 5.0 · MinTIC · La Guajira, Riohacha · Comercio Digital</p>
+        <div class="divider" style="margin: 1rem auto;"></div>
+        <p style="font-size: 0.75rem; color: var(--ink-faded);">Facilitador: Camilo Lopez · Inteligencia Artificial Aplicada</p>
     </div>
 </section>
 
-
+<!-- ═══ PROGRESS BAR + NAV JS ═══ -->
 <script>
-// Progress bar
-window.addEventListener('scroll', () => {
+(function() {
+    // Progress bar
     const bar = document.getElementById('progress-bar');
-    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-    bar.style.width = pct + '%';
-});
+    function updateProgress() {
+        const h = document.documentElement;
+        const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+        bar.style.width = Math.min(pct, 100) + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
 
-// Intersection observer for fade-in
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-        if (e.isIntersecting) {
-            e.target.classList.add('visible');
-        }
+    // Smooth scroll for nav
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
     });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('section').forEach(s => observer.observe(s));
+})();
 </script>
 
 </body>
