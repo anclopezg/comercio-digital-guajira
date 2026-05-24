@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio Digital desde La Guajira — Blockchain + IA + Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Special+Elite&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Special+Elite&family=Patrick+Hand&display=swap');
+
+    :root {
+        --newsprint: #F0E6C8;
+        --newsprint-dark: #E8D8B0;
+        --newsprint-light: #F5EDD8;
+        --ink: #1A1A1A;
+        --ink-faded: #333;
+        --red-vintage: #CC3333;
+        --blue-vintage: #2255AA;
+        --yellow-vintage: #E8B830;
+        --green-vintage: #448844;
+        --orange-vintage: #CC6633;
+        --purple-vintage: #663366;
+        --white-comic: #FAF5E8;
+        --shadow-comic: 4px 4px 0 var(--ink);
+        --shadow-sm: 2px 2px 0 var(--ink);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+        font-family: 'Comic Neue', 'Patrick Hand', cursive, sans-serif;
+        background: var(--newsprint);
+        color: var(--ink);
+        overflow-x: hidden;
+        line-height: 1.6;
+        background-image:
+            radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px),
+            radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
+        background-size: 6px 6px, 12px 12px;
+        background-position: 0 0, 3px 3px;
+    }
+
+    body::before {
+        content: '';
+        position: fixed; inset: 0;
+        background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px);
+        pointer-events: none; z-index: 0;
+    }
+
+    nav {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+        background: var(--yellow-vintage);
+        border-bottom: 4px solid var(--ink);
+        padding: 0.5rem 1.5rem;
+        display: flex; align-items: center; justify-content: space-between;
+        box-shadow: 0 2px 0 var(--ink);
+    }
+
+    .nav-brand {
+        font-family: 'Bangers', cursive;
+        font-size: 1.2rem; color: var(--red-vintage);
+        letter-spacing: 0.08em; text-transform: uppercase;
+        text-shadow: 1px 1px 0 var(--ink);
+        white-space: nowrap;
+    }
+
+    .nav-links { display: flex; gap: 0.4rem; list-style: none; flex-wrap: wrap; align-items: center; }
+    .nav-links a {
+        font-family: 'Bangers', cursive; color: var(--ink);
+        text-decoration: none; font-size: 0.6rem;
+        letter-spacing: 0.05em; text-transform: uppercase;
+        padding: 0.2rem 0.4rem; border: 2px solid transparent;
+        border-radius: 2px; transition: all 0.15s; white-space: nowrap;
+    }
+    .nav-links a:hover {
+        border-color: var(--ink); background: var(--white-comic);
+        box-shadow: var(--shadow-sm);
+    }
+
+    #progress-bar {
+        position: fixed; top: 0; left: 0; height: 4px;
+        background: repeating-linear-gradient(90deg, var(--red-vintage), var(--red-vintage) 8px, var(--yellow-vintage) 8px, var(--yellow-vintage) 16px);
+        z-index: 1001; transition: width 0.15s ease;
+    }
+
+    section {
+        padding: 5rem 1.5rem 2.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section:nth-child(odd) { background: var(--newsprint-light); }
+    section:nth-child(even) { background: var(--newsprint); }
+
+    .section-inner {
+        max-width: 1000px; margin: 0 auto; position: relative; z-index: 1;
+    }
+
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Bangers', cursive;
+        text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.1;
+    }
+
+    .section-title {
+        font-family: 'Bangers', cursive;
+        font-size: clamp(2rem, 5.5vw, 4rem);
+        color: var(--ink); line-height: 1.05;
+        text-transform: uppercase; margin-bottom: 1rem;
+        text-shadow: 3px 3px 0 var(--yellow-vintage), -1px -1px 0 transparent;
+    }
+
+    .section-title .highlight { color: var(--red-vintage); text-shadow: 3px 3px 0 var(--yellow-vintage); }
+
+    .section-subtitle {
+        font-family: 'Comic Neue', cursive;
+        font-size: clamp(0.95rem, 2vw, 1.15rem);
+        color: var(--ink-faded); line-height: 1.6; margin-bottom: 1.5rem; font-weight: 400;
+    }
+
+    .section-label {
+        display: inline-block; padding: 0.25rem 0.7rem;
+        font-family: 'Bangers', cursive; font-size: 0.8rem;
+        letter-spacing: 0.1em; border: 2px solid var(--ink);
+        background: var(--yellow-vintage); color: var(--ink);
+        transform: rotate(-1deg); margin-bottom: 0.8rem; box-shadow: var(--shadow-sm);
+    }
+
+    .action-lines {
+        position: absolute; inset: 0;
+        background: repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 8deg, rgba(0,0,0,0.03) 8deg, rgba(0,0,0,0.03) 10deg);
+        opacity: 0.5; pointer-events: none;
+    }
+
+    .stat-grid { display: grid; gap: 1.2rem; margin-top: 1.5rem; }
+    .stat-grid.grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .stat-grid.grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .stat-grid.grid-4 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+
+    .stat-box {
+        background: var(--white-comic); border: 3px solid var(--ink); border-radius: 3px;
+        box-shadow: var(--shadow-sm); padding: 1.3rem; transition: transform 0.15s, box-shadow 0.15s; position: relative;
+    }
+    .stat-box:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-comic); }
+    .stat-box h4 { font-family: 'Bangers', cursive; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .stat-box p { font-family: 'Comic Neue', cursive; font-size: 0.9rem; line-height: 1.5; }
+    .stat-number { font-family: 'Bangers', cursive; font-size: 2rem; line-height: 1.1; }
+    .stat-label { font-family: 'Comic Neue', cursive; font-size: 0.85rem; color: var(--ink-faded); margin-top: 0.3rem; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+    .two-col-text p { font-family: 'Comic Neue', cursive; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; }
+
+    .timeline { position: relative; padding-left: 1.5rem; margin-top: 1.5rem; }
+    .timeline::before {
+        content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+        background: repeating-linear-gradient(to bottom, var(--red-vintage) 0px, var(--red-vintage) 8px, var(--yellow-vintage) 8px, var(--yellow-vintage) 16px, var(--blue-vintage) 16px, var(--blue-vintage) 24px);
+        border-radius: 2px;
+    }
+    .timeline-item {
+        position: relative; margin-bottom: 1rem; padding: 0.8rem 1.2rem;
+        background: var(--white-comic); border: 2px solid var(--ink); border-radius: 2px; box-shadow: var(--shadow-sm);
+    }
+    .timeline-item::before {
+        content: ''; position: absolute; left: -1.95rem; top: 1rem;
+        width: 12px; height: 12px; background: var(--red-vintage); border: 2px solid var(--ink); border-radius: 50%;
+    }
+    .timeline-content h4 { font-family: 'Bangers', cursive; font-size: 1.1rem; color: var(--blue-vintage); margin-bottom: 0.2rem; }
+    .timeline-content p { font-family: 'Comic Neue', cursive; font-size: 0.85rem; color: var(--ink-faded); }
+
+    .text-link, a { color: var(--blue-vintage); text-decoration: none; border-bottom: 2px solid var(--blue-vintage); font-weight: 700; transition: all 0.15s; }
+    .text-link:hover, a:hover { background: var(--yellow-vintage); }
+
+    #hero {
+        min-height: 100vh; display: flex; flex-direction: column;
+        justify-content: center; align-items: center; text-align: center;
+        position: relative; padding-top: 4rem;
+    }
+    .hero-bg {
+        position: absolute; inset: 0;
+        background: repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 12deg, rgba(0,0,0,0.03) 12deg, rgba(0,0,0,0.03) 14deg);
+        opacity: 0.5; pointer-events: none;
+    }
+    .hero-panel {
+        position: relative; z-index: 1;
+        background: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px), var(--white-comic);
+        background-size: 8px 8px, 100% 100%;
+        border: 5px solid var(--ink);
+        box-shadow: 8px 8px 0 var(--ink), inset 0 0 0 1px rgba(0,0,0,0.05);
+        padding: 3rem 2.5rem; max-width: 850px; width: 100%;
+    }
+    .hero-panel::before { content: ''; position: absolute; top: -8px; left: -8px; width: 20px; height: 20px; border-top: 4px solid var(--red-vintage); border-left: 4px solid var(--red-vintage); }
+    .hero-panel::after { content: ''; position: absolute; bottom: -8px; right: -8px; width: 20px; height: 20px; border-bottom: 4px solid var(--red-vintage); border-right: 4px solid var(--red-vintage); }
+
+    .hero-title {
+        font-family: 'Bangers', cursive; font-size: clamp(2.8rem, 7.5vw, 5rem);
+        line-height: 1.05; text-transform: uppercase; margin-bottom: 1rem;
+        text-shadow: 4px 4px 0 var(--yellow-vintage);
+    }
+    .hero-tagline {
+        font-family: 'Comic Neue', cursive; font-size: clamp(0.95rem, 2vw, 1.2rem);
+        color: var(--ink-faded); line-height: 1.6; margin-bottom: 1.2rem;
+    }
+
+    .hero-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0; }
+    .badge {
+        display: inline-block; padding: 0.25rem 0.6rem;
+        font-family: 'Bangers', cursive; font-size: 0.7rem;
+        letter-spacing: 0.08em; border: 2px solid var(--ink); border-radius: 2px; margin-bottom: 0.8rem; margin-right: 0.2rem;
+    }
+    .badge-cyan { background: var(--blue-vintage); color: white; }
+    .badge-violet { background: var(--purple-vintage); color: white; }
+    .badge-green { background: var(--green-vintage); color: white; }
+    .badge-orange { background: var(--orange-vintage); color: white; }
+    .badge-red { background: var(--red-vintage); color: white; }
+    .badge-blue { background: var(--blue-vintage); color: white; }
+    .badge-blockchain { background: var(--purple-vintage); color: white; }
+    .badge-ia { background: var(--green-vintage); color: white; }
+
+    .comic-character { width: 120px; height: 120px; flex-shrink: 0; filter: drop-shadow(2px 2px 0 var(--ink)); transition: transform 0.2s ease; }
+    .comic-character:hover { transform: scale(1.08) rotate(-2deg); }
+
+    .char-row { display: flex; gap: 1.2rem; align-items: center; margin: 1.2rem 0; }
+    .char-right { flex-direction: row-reverse; text-align: right; }
+
+    .char-bubble {
+        flex: 1; background: var(--white-comic); border: 3px solid var(--ink);
+        border-radius: 20px; padding: 1rem 1.2rem; position: relative;
+        font-family: 'Comic Neue', cursive; font-size: 1rem; line-height: 1.5;
+        box-shadow: var(--shadow-sm);
+        background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px), var(--white-comic);
+        background-size: 6px 6px, 100% 100%;
+    }
+    .char-bubble::after {
+        content: ''; position: absolute; left: -20px; top: 50%; transform: translateY(-50%);
+        width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent;
+        border-right: 20px solid var(--ink);
+    }
+    .char-bubble::before {
+        content: ''; position: absolute; left: -16px; top: 50%; transform: translateY(-50%);
+        width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent;
+        border-right: 16px solid var(--white-comic); z-index: 1;
+    }
+    .char-right .char-bubble::after { left: auto; right: -20px; border-right: none; border-left: 20px solid var(--ink); }
+    .char-right .char-bubble::before { left: auto; right: -16px; border-right: none; border-left: 16px solid var(--white-comic); }
+    .char-name { font-family: 'Bangers', cursive; font-size: 0.8rem; color: var(--red-vintage); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.2rem; }
+
+    @media (max-width: 768px) {
+        .nav-links { display: none; }
+        .char-row, .char-right { flex-direction: column; text-align: center; }
+        .comic-character { width: 90px; height: 90px; }
+        .char-bubble::after, .char-bubble::before {
+            bottom: auto !important; top: -12px !important; left: 50% !important; right: auto !important;
+            transform: translateX(-50%); border-top: none !important;
+            border-bottom: 12px solid var(--ink) !important;
+            border-left-color: transparent !important; border-right-color: transparent !important;
+        }
+        .char-bubble::before { top: -8px !important; border-bottom-color: var(--white-comic) !important; }
+        .hero-panel { padding: 2rem 1.2rem; }
+        .nav-brand { font-size: 1rem; }
+    }
+
+    .caption-box {
+        background: var(--yellow-vintage); border: 3px solid var(--ink);
+        padding: 0.7rem 1rem; font-family: 'Special Elite', monospace; font-size: 0.9rem; line-height: 1.4;
+        margin: 1rem 0; transform: rotate(-1deg); box-shadow: var(--shadow-sm);
+    }
+    .caption-box.red { background: var(--red-vintage); color: white; }
+    .caption-box.blue { background: var(--blue-vintage); color: white; }
+    .caption-box.green { background: var(--green-vintage); color: white; }
+
+    .burst {
+        display: inline-block; background: var(--red-vintage); color: var(--white-comic);
+        font-family: 'Bangers', cursive; font-size: 1.4rem; padding: 0.4rem 1.2rem;
+        clip-path: polygon(50% 0%, 61% 15%, 78% 3%, 85% 20%, 100% 15%, 95% 30%, 100% 50%, 95% 70%, 100% 85%, 85% 80%, 78% 97%, 61% 85%, 50% 100%, 39% 85%, 22% 97%, 15% 80%, 0% 85%, 5% 70%, 0% 50%, 5% 30%, 0% 15%, 15% 20%, 22% 3%, 39% 15%);
+        transform: rotate(-5deg);
+    }
+
+    .comic-quote {
+        font-family: 'Special Elite', monospace; font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+        color: var(--ink); border-left: 5px solid var(--red-vintage);
+        padding-left: 1.2rem; margin: 1.5rem 0; line-height: 1.5; font-style: italic;
+    }
+
+    .comic-stats { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin: 1.5rem 0; }
+    .comic-stat {
+        text-align: center; background: var(--yellow-vintage); border: 3px solid var(--ink); border-radius: 3px;
+        padding: 1.2rem 1.5rem; min-width: 160px; box-shadow: var(--shadow-sm); position: relative;
+    }
+    .comic-stat::before {
+        content: ''; position: absolute; inset: 0; background: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 4px 4px; pointer-events: none; border-radius: 3px;
+    }
+    .comic-stat .num { font-family: 'Bangers', cursive; font-size: 2.2rem; color: var(--red-vintage); line-height: 1; }
+    .comic-stat .label { font-family: 'Comic Neue', cursive; font-size: 0.8rem; margin-top: 0.3rem; color: var(--ink-faded); }
+
+    .ghost-btn, .comic-btn {
+        display: inline-block; padding: 0.7rem 1.8rem; font-family: 'Bangers', cursive; font-size: 1.1rem;
+        letter-spacing: 0.08em; text-transform: uppercase; color: var(--white-comic);
+        background: var(--red-vintage); border: 3px solid var(--ink); border-radius: 3px;
+        box-shadow: var(--shadow-sm); text-decoration: none; transition: all 0.15s; cursor: pointer;
+    }
+    .ghost-btn:hover, .comic-btn:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-comic); background: var(--blue-vintage); }
+    .comic-btn.green { background: var(--green-vintage); }
+    .comic-btn.blue { background: var(--blue-vintage); }
+    .comic-btn.yellow { background: var(--yellow-vintage); color: var(--ink); }
+
+    .halftone-overlay {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+        background-size: 4px 4px; pointer-events: none; z-index: 0;
+    }
+
+    .step-list { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.2rem; }
+    .step {
+        display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.8rem;
+        border-left: 4px solid var(--ink); background: var(--white-comic); border-radius: 0 3px 3px 0;
+    }
+    .step-num {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 36px; height: 36px; background: var(--red-vintage); color: var(--white-comic);
+        font-family: 'Bangers', cursive; font-size: 1.3rem; border: 2px solid var(--ink);
+        border-radius: 50%; flex-shrink: 0;
+    }
+    .step-text { font-family: 'Comic Neue', cursive; font-size: 0.9rem; line-height: 1.5; }
+
+    .comp-table { width: 100%; border-collapse: collapse; margin-top: 1.2rem; background: var(--white-comic); border: 3px solid var(--ink); border-radius: 3px; overflow: hidden; box-shadow: var(--shadow-sm); }
+    .comp-table th { background: var(--blue-vintage); color: white; font-family: 'Bangers', cursive; padding: 0.6rem 0.5rem; text-align: left; border-bottom: 2px solid var(--ink); font-size: 0.9rem; }
+    .comp-table td { padding: 0.5rem; border-bottom: 1px solid var(--newsprint-dark); font-family: 'Comic Neue', cursive; font-size: 0.85rem; }
+    .comp-table tr:last-child td { border-bottom: none; }
+    .comp-table tr:hover td { background: var(--yellow-vintage); }
+
+    .divider { width: 50px; height: 3px; background: var(--red-vintage); margin: 1.2rem auto; border-radius: 2px; }
+    .source { margin-top: 1rem; font-size: 0.8rem; color: var(--ink-faded); }
+
+    .qr-container { text-align: center; margin-top: 1.5rem; }
+    .qr-code { width: 160px; height: 160px; border: 3px solid var(--ink); border-radius: 3px; background: var(--white-comic); box-shadow: var(--shadow-sm); }
+    .qr-small { width: 100px; height: 100px; border: 2px solid var(--ink); border-radius: 3px; background: white; box-shadow: var(--shadow-sm); }
+    .qr-container p { font-family: 'Comic Neue', cursive; font-size: 0.85rem; margin-top: 0.5rem; color: var(--ink-faded); }
+
+    .scroll-arrow {
+        text-align: center; margin-top: 1.5rem; font-family: 'Bangers', cursive; font-size: 1rem;
+        color: var(--ink-faded); animation: bounce 1.5s ease-in-out infinite;
+    }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+    .highlight-v { color: var(--purple-vintage) !important; font-weight: 700; }
+    .highlight-g { color: var(--green-vintage) !important; font-weight: 700; }
+
+    .section-image {
+        width: 100%; max-width: 700px; max-height: 300px; object-fit: cover;
+        border: 3px solid var(--ink); border-radius: 3px; box-shadow: var(--shadow-comic);
+        margin: 1.2rem auto; display: block;
+    }
+
+    .prompt-box {
+        background: var(--newsprint); border: 2px solid var(--ink); border-radius: 3px;
+        padding: 1rem; font-family: 'Special Elite', monospace; font-size: 0.85rem;
+        line-height: 1.5; white-space: pre-wrap; margin: 0.5rem 0;
+    }
+
+    .tutorial-step {
+        background: var(--white-comic); border-left: 3px solid var(--ink);
+        padding: 0.8rem 1rem; margin: 0.5rem 0; border-radius: 0 3px 3px 0; text-align: left;
+    }
+    .tutorial-step h4 { font-family: 'Bangers', cursive; font-size: 0.95rem; color: var(--blue-vintage); margin-bottom: 0.2rem; }
+    .tutorial-step p { font-size: 0.9rem; color: var(--ink-faded); line-height: 1.5; }
+    .tutorial-step code { background: var(--yellow-vintage); padding: 0.1rem 0.4rem; border-radius: 2px; font-size: 0.85rem; }
+
+    .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .qr-item { text-align: center; }
+    .qr-item img { width: 100px; height: 100px; }
+    .qr-item span { display: block; font-size: 0.75rem; font-family: 'Bangers', cursive; margin-top: 0.3rem; }
+
+    .timer-box {
+        font-family: 'Bangers', cursive; font-size: 2.5rem; color: var(--red-vintage);
+        text-align: center; margin: 0.5rem 0;
+    }
+        /* ── Hero photo */
+    .hero-photo {
+        width: 90px; height: 90px;
+        border-radius: 50%;
+        border: 3px solid var(--green-vintage);
+        object-fit: cover;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+</style>
