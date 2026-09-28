@@ -364,9 +364,18 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
         <a href="#pregunta">¿Por qué?</a>
         <a href="#leticia">Leticia</a>
         <a href="#estructura">Ruta</a>
-        <a href="#herramientas">🛠️ Herramientas</a>
-        <a href="#marca">🏷️ Marca</a>
-        <a href="#contenido">✍️ Contenido</a>
+        <a href="#energizador1">⚡</a>
+        <a href="#dikw">📊 Datos</a>
+        <a href="#forma-datos">📋 Tipos</a>
+        <a href="#datos-negocio">💼 Negocio</a>
+        <a href="#analisis-datos">📈 Análisis</a>
+        <a href="#bi-intro">🧠 BI</a>
+        <a href="#preguntas-datos">❓ Preguntas</a>
+        <a href="#ml-fundamentos">🤖 ML</a>
+        <a href="#modelo-vs-agente">🔑 Conceptos</a>
+        <a href="#casos-ia-latam">🌎 Casos</a>
+        <a href="#ia-que-es">¿Qué es IA?</a>
+        <a href="#ia-tu-celular">Tu Celular</a>
         <a href="#act1">🔧 Act. 1</a>
         <a href="#act2">🔧 Act. 2</a>
         <a href="#act3">🔧 Act. 3</a>
@@ -374,6 +383,7 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
         <a href="#act5">🔧 Act. 5</a>
         <a href="#exposicion">🎤 Exposición</a>
         <a href="#plan7d">Plan 7D</a>
+        <a href="#herramientas">QRs</a>
         <a href="#cierre">Cierre</a>
     </div>
 </nav>
@@ -523,23 +533,31 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
 
         <div class="timeline" style="margin-top:2rem;">
             <div class="timeline-item">
-                <h4>🏷️ Bloque 1: Marca (30 min)</h4>
+                <h4>📊 Bloque 0: Datos e Inteligencia (40 min)</h4>
+                <p>Pirámide DIKW, tipos de datos, análisis, BI y cómo las máquinas aprenden.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>📱 Bloque 1: IA en tu Celular (30 min)</h4>
+                <p>Qué es la IA, casos reales y cómo usarla desde tu teléfono sin saber de tecnología.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>🏷️ Bloque 2: Marca (30 min)</h4>
                 <p>Fundamentos de marketing digital y construcción de marca con identidad amazónica.</p>
             </div>
             <div class="timeline-item">
-                <h4>✍️ Bloque 2: Contenido con IA (50 min)</h4>
+                <h4>✍️ Bloque 3: Contenido con IA (50 min)</h4>
                 <p>Crear textos, imágenes y videos cortos con IA generativa que resalten tu marca.</p>
             </div>
             <div class="timeline-item">
-                <h4>📅 Bloque 3: Campañas y calendario (40 min)</h4>
+                <h4>📅 Bloque 4: Campañas y calendario (40 min)</h4>
                 <p>Diseñar campañas y calendarios de contenido con herramientas de IA.</p>
             </div>
             <div class="timeline-item">
-                <h4>📊 Bloque 4: Métricas (20 min)</h4>
+                <h4>📊 Bloque 5: Métricas (20 min)</h4>
                 <p>Métricas básicas para medir el impacto de tus publicaciones.</p>
             </div>
             <div class="timeline-item">
-                <h4>🎤 Bloque 5: Exposición (30 min)</h4>
+                <h4>🎤 Bloque 6: Exposición (30 min)</h4>
                 <p>Muestra al grupo lo que creaste. ¡Enseñar es la mejor forma de aprender!</p>
             </div>
         </div>
@@ -552,34 +570,521 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
 
 <div class="comic-divider"><div class="comic-divider-inner"></div></div>
 
-<!-- ===================== HERRAMIENTAS ===================== -->
-<section id="herramientas">
+<!-- ===================== ENERGIZADOR 1 ===================== -->
+<section id="energizador1">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner" style="text-align:center;">
+        <div class="activity-badge">⚡ ENERGIZADOR — 5 min</div>
+        <h2 class="section-title">¿Quién eres y qué vendes?</h2>
+        <p class="section-subtitle" style="margin:0 auto 1.5rem;">
+            En 30 segundos cada uno: tu nombre, tu negocio, y <strong>una cosa que te hace diferente</strong> a los demás.
+        </p>
+        <div class="timer-display" id="timer-energizer1">5:00</div>
+        <button class="timer-btn start" onclick="startEnergizer1()">▶ Iniciar</button>
+        <button class="timer-btn reset" onclick="resetEnergizer1()">↺ Reset</button>
+        <div class="caption-box cyan" style="margin-top:2rem; text-align:left; max-width:500px; margin-left:auto; margin-right:auto;">
+            <strong>Ejemplo:</strong> "Soy María, tengo una tienda de artesanías amazónicas en Leticia. Lo que me hace diferente es que mis productos están hechos por comunidades indígenas locales y cada pieza cuenta una historia ancestral."
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== DIKW ===================== -->
+<section id="dikw">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Antes de empezar: los datos</div>
+        <h2 class="section-title">Del <span class="highlight">dato</span> a la <span class="highlight-green">decisión inteligente</span></h2>
+        <p class="section-subtitle">Todo lo que hacemos en marketing digital se basa en datos. Pero un dato solo no sirve de nada — tiene que convertirse en sabiduría.</p>
+
+        <img class="section-image" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=250&fit=crop" alt="Datos e información visualizada">
+
+        <div class="stat-grid grid-4" style="margin-top:2rem;">
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:1.5rem;">📊 Dato</div>
+                <div class="stat-label">Hecho crudo, sin contexto</div>
+                <p style="font-size:0.85rem; margin-top:0.5rem;">"32°C, 15 ventas"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:1.3rem; color:var(--cyan-amazon);">📚 Información</div>
+                <div class="stat-label">Dato con contexto</div>
+                <p style="font-size:0.85rem; margin-top:0.5rem;">"En enero hice 15 ventas más que en diciembre en mi tienda"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:1.2rem; color:var(--green-selva);">🧠 Conocimiento</div>
+                <div class="stat-label">Patrón descubierto</div>
+                <p style="font-size:0.85rem; margin-top:0.5rem;">"Los turistas de Bogotá compran más artesanías los fines de semana"</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:1.3rem; color:var(--gold-amanecer);">✨ Sabiduría</div>
+                <div class="stat-label">Decisión basada en conocimiento</div>
+                <p style="font-size:0.85rem; margin-top:0.5rem;">"Creo una promoción de artesanías para los fines de semana y la publico en Instagram"</p>
+            </div>
+        </div>
+
+        <div class="caption-box cyan" style="margin-top:2rem;">
+            <strong>🗣️ Mago de los Datos:</strong> "¡Un dato solo es un número! Pero cuando lo conectas con otros datos, se convierte en información. Cuando entiendes el patrón, es conocimiento. Y cuando sabes qué hacer con él en tu negocio... eso es sabiduría. La IA nos ayuda a subir esta pirámide más rápido."
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== FORMA DE LOS DATOS ===================== -->
+<section id="forma-datos">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Tipos de datos</div>
+        <h2 class="section-title">¿Qué forma tienen los <span class="highlight-cyan">datos</span>?</h2>
+        <p class="section-subtitle">No todos los datos son números en una tabla. Muchos de los datos más valiosos para tu negocio son fotos, textos y opiniones.</p>
+
+        <div class="two-col" style="margin-top:2rem;">
+            <div class="card">
+                <div class="emoji">📊</div>
+                <h4>Datos ordenados</h4>
+                <p>Tienen un formato definido, como una hoja de cálculo:</p>
+                <ul style="margin-left:1rem; margin-top:0.5rem;">
+                    <li>Ventas por día</li>
+                    <li>Precios de productos</li>
+                    <li>Calificaciones de clientes (5 ⭐)</li>
+                    <li>Horarios de atención</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="emoji">🌪️</div>
+                <h4>Datos caóticos</h4>
+                <p>No tienen formato fijo, pero son igual de importantes:</p>
+                <ul style="margin-left:1rem; margin-top:0.5rem;">
+                    <li>Fotos de tus productos</li>
+                    <li>Reseñas de clientes</li>
+                    <li>Mensajes de WhatsApp</li>
+                    <li>Comentarios en Instagram</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="caption-box gold" style="margin-top:2rem;">
+            <strong>💡 La IA entiende AMBOS tipos:</strong> Puede leer tus reseñas (texto caótico), analizar tus fotos de producto (imágenes), Y trabajar con tus ventas y horarios (datos ordenados). Todo junto.
+        </div>
+    </div>
+    <!-- SVG: Computer -->
+    <svg class="char" style="top:4rem;right:2rem;width:80px;height:100px;" viewBox="0 0 80 100">
+        <rect x="10" y="20" width="60" height="50" rx="5" fill="white" stroke="#1A1A1A" stroke-width="2"/>
+        <line x1="15" y1="30" x2="65" y2="30" stroke="#DDD" stroke-width="1"/>
+        <line x1="15" y1="40" x2="65" y2="40" stroke="#DDD" stroke-width="1"/>
+        <line x1="15" y1="50" x2="65" y2="50" stroke="#DDD" stroke-width="1"/>
+        <line x1="15" y1="60" x2="65" y2="60" stroke="#DDD" stroke-width="1"/>
+        <rect x="15" y="25" width="8" height="8" rx="1" fill="#00B4D8"/>
+        <rect x="28" y="25" width="15" height="8" rx="1" fill="#EEE"/>
+        <rect x="15" y="35" width="8" height="8" rx="1" fill="#2D6A4F"/>
+        <rect x="28" y="35" width="20" height="8" rx="1" fill="#EEE"/>
+        <rect x="15" y="45" width="8" height="8" rx="1" fill="#FFB703"/>
+        <rect x="28" y="45" width="12" height="8" rx="1" fill="#EEE"/>
+        <rect x="25" y="72" width="30" height="15" rx="3" fill="#F5E6C8" stroke="#1A1A1A" stroke-width="1.5"/>
+        <circle cx="40" cy="88" r="10" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
+        <text x="40" y="92" text-anchor="middle" font-size="10" fill="white">📋</text>
+    </svg>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== DATOS EN TU NEGOCIO ===================== -->
+<section id="datos-negocio">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Datos en tu negocio</div>
+        <h2 class="section-title">Los datos que ya tiene <span class="highlight">tu emprendimiento</span></h2>
+        <p class="section-subtitle">No necesitas ser experto. Ya generas datos todos los días — solo hay que aprender a usarlos.</p>
+
+        <div class="three-col" style="margin-top:2rem;">
+            <div class="card cyan">
+                <div class="emoji">💬</div>
+                <h4>WhatsApp</h4>
+                <p>Cada mensaje es un dato: qué preguntan los clientes, cuánto pagan, de dónde vienen, qué productos les interesan más.</p>
+            </div>
+            <div class="card green">
+                <div class="emoji">📸</div>
+                <h4>Fotos y videos</h4>
+                <p>Tus fotos de productos, videos de tu negocio, historias de Instagram — son datos visuales que la IA puede analizar y mejorar.</p>
+            </div>
+            <div class="card gold">
+                <div class="emoji">⭐</div>
+                <h4>Reseñas</h4>
+                <p>Lo que escriben los clientes en Google o Facebook te dice exactamente qué les gustó y qué puedes mejorar.</p>
+            </div>
+        </div>
+
+        <div class="caption-box red" style="margin-top:2rem;">
+            <strong>🗣️ Artesana de Leticia:</strong> "Yo no sabía que el 70% de mis clientes venían de Bogotá y me buscaban por 'artesanías amazónicas'. Cuando lo vi en mis mensajes de WhatsApp, creé un perfil especial para bogotanos y duplicé mis ventas."
+        </div>
+
+        <div class="stat-grid grid-3" style="margin-top:2rem;">
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:2rem;">500+</div>
+                <div class="stat-label">Horas de video subidas a YouTube cada minuto</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:2rem;">6M+</div>
+                <div class="stat-label">Mensajes de WhatsApp cada minuto en el mundo</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" style="font-size:2rem;">4M+</div>
+                <div class="stat-label">Búsquedas en Google cada minuto</div>
+            </div>
+        </div>
+
+        <div class="caption-box cyan" style="margin-top:1.5rem;">
+            <strong>🧩 Mago de los Datos:</strong> "¡Cada minuto se generan millones de datos! El verdadero poder no está en la cantidad, sino en convertir ese océano de datos en decisiones inteligentes para TU negocio."
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== ANÁLISIS DE DATOS ===================== -->
+<section id="analisis-datos">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Proceso</div>
+        <h2 class="section-title">Cómo los datos se convierten en <span class="highlight-green">decisiones</span></h2>
+        <p class="section-subtitle">No importa si son pocos datos — lo importante es qué haces con ellos.</p>
+
+        <div class="four-col" style="margin-top:2rem;">
+            <div class="card">
+                <div class="emoji">🧹</div>
+                <h4>1. Limpiar</h4>
+                <p>Quitar errores y duplicados. Si los datos están sucios, las conclusiones serán erróneas.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">🔄</div>
+                <h4>2. Transformar</h4>
+                <p>Organizar los datos: agrupar por producto, por cliente, por temporada.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">📈</div>
+                <h4>3. Analizar</h4>
+                <p>Encontrar patrones: "¿Qué producto se vende más?", "¿De dónde vienen mis clientes?"</p>
+            </div>
+            <div class="card">
+                <div class="emoji">💡</div>
+                <h4>4. Decidir</h4>
+                <p>Convertir hallazgos en acciones. Los datos sin acción son solo curiosidad.</p>
+            </div>
+        </div>
+
+        <div class="caption-box gold" style="margin-top:2rem;">
+            <strong>💡 Ejemplo real:</strong><br>
+            <strong>Datos:</strong> "12 mochilas en enero, 5 en febrero, 3 en marzo"<br>
+            <strong>Limpio:</strong> Quitas los duplicados y verificas fechas<br>
+            <strong>Transformado:</strong> Agrupados por mes y tipo de producto<br>
+            <strong>Analizado:</strong> "La temporada alta es enero, pero febrero y marzo están vacíos"<br>
+            <strong>Decisión:</strong> "Creo una promoción de febrero con 20% de descuento y la publico en Instagram con IA"
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== BUSINESS INTELLIGENCE ===================== -->
+<section id="bi-intro">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Inteligencia de Negocios</div>
+        <h2 class="section-title">Inteligencia de <span class="highlight">Negocios</span> (BI)</h2>
+        <p class="section-subtitle">Suena complicado, pero es simple: usar información para tomar mejores decisiones.</p>
+
+        <div class="caption-box cyan" style="margin-top:1.5rem;">
+            <strong>📊 Analista de BI:</strong> "Los datos sin análisis son como un libro cerrado. Con Business Intelligence los abrimos y descubrimos patrones que nos dicen exactamente dónde invertir y cómo crecer."
+        </div>
+
+        <div class="two-col" style="margin-top:2rem;">
+            <div class="card">
+                <h4>📊 Marketing</h4>
+                <p>Analizar qué publicaciones tienen más likes, qué horarios publican tus competidores, qué fotos atraen más clientes.</p>
+            </div>
+            <div class="card">
+                <h4>💰 Ventas</h4>
+                <p>Ver qué producto se vende más, en qué época, a qué precio. Detectar oportunidades de crecimiento.</p>
+            </div>
+            <div class="card">
+                <h4>👥 Clientes</h4>
+                <p>Conocer de dónde vienen tus clientes, qué edad tienen, qué buscan, cuánto gastan. Para ofrecerles exactamente lo que quieren.</p>
+            </div>
+            <div class="card">
+                <h4>📦 Operaciones</h4>
+                <p>Saber cuánto inventario necesitas, qué productos tener listos, cuánto material comprar según la temporada.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== PREGUNTAR BIEN ===================== -->
+<section id="preguntas-datos">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Hacer las preguntas correctas</div>
+        <h2 class="section-title">Todo empieza con una <span class="highlight-cyan">pregunta</span></h2>
+        <p class="section-subtitle">La ciencia de datos no es más que formular las preguntas correctas y buscar respuestas en los datos.</p>
+
+        <div class="timeline" style="margin-top:2rem;">
+            <div class="timeline-item">
+                <h4>📋 Preguntas descriptivas: ¿Qué pasó?</h4>
+                <p>"¿Cuántas ventas hice esta semana?" "¿De qué ciudades vinieron mis clientes?"</p>
+            </div>
+            <div class="timeline-item">
+                <h4>🔍 Preguntas exploratorias: ¿Hay algo interesante?</h4>
+                <p>"¿Será que los clientes que vienen por Instagram compran más que los de WhatsApp?"</p>
+            </div>
+            <div class="timeline-item">
+                <h4>🔗 Preguntas de relación: ¿Están conectados?</h4>
+                <p>"¿Existe relación entre publicar más en Instagram y recibir más pedidos?"</p>
+            </div>
+            <div class="timeline-item">
+                <h4>🔮 Preguntas predictivas: ¿Qué va a pasar?</h4>
+                <p>"¿Cuántas ventas esperaré en la próxima temporada turística?" "¿Qué contenido debería publicar para vender más?"</p>
+            </div>
+        </div>
+
+        <div class="caption-box red" style="margin-top:2rem;">
+            <strong>⚡ Y aquí es donde entra la IA:</strong> La IA puede responder TODAS estas preguntas por ti. Solo tienes que saber preguntarle. Eso es lo que vamos a aprender hoy.
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== ML FUNDAMENTOS ===================== -->
+<section id="ml-fundamentos">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Fundamentos</div>
+        <h2 class="section-title">¿Cómo <span class="highlight-green">aprenden</span> las máquinas?</h2>
+        <p class="section-subtitle">La IA no "piensa" como nosotros. Aprende de ejemplos — igual que tú aprendiste a reconocer un jaguar de ver muchos jaguares.</p>
+
+        <img class="section-image" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=250&fit=crop" alt="Inteligencia artificial y aprendizaje de máquinas">
+
+        <div class="two-col" style="margin-top:2rem;">
+            <div class="card green">
+                <div class="emoji">🎯</div>
+                <h4>Aprendizaje con ejemplos</h4>
+                <p>Le mostramos a la máquina muchos ejemplos con etiquetas: "esto es una buena foto de producto", "esto es un texto aburrido". Después, cuando le das algo nuevo, lo clasifica basándose en lo que aprendió.</p>
+                <p style="margin-top:0.5rem;"><strong>Ejemplo:</strong> Le muestras 100 buenas descripciones de productos y 100 malas. Luego le pides que escriba una nueva — y la escribe bien porque "aprendió" el patrón.</p>
+            </div>
+            <div class="card cyan">
+                <div class="emoji">🔎</div>
+                <h4>Aprendizaje explorando</h4>
+                <p>La máquina busca patrones sola, sin que nadie le diga qué es qué. Agrupa datos similares.</p>
+                <p style="margin-top:0.5rem;"><strong>Ejemplo:</strong> Le das todas las reseñas de tus clientes y ella sola descubre que hay 3 grupos: los que aman el diseño, los que aman el precio, y los que vienen por la historia.</p>
+            </div>
+        </div>
+
+        <div class="caption-box gold" style="margin-top:2rem;">
+            <strong>🗣️ Mago de los Datos:</strong> "¿Pueden pensar las máquinas? Si un algoritmo puede aprender patrones a partir de datos, quizás la pregunta no es si piensan, sino si sus respuestas nos ayudan a tomar mejores decisiones. Y la respuesta es: ¡SÍ!"
+        </div>
+    </div>
+    <!-- SVG: Brain -->
+    <svg class="char" style="top:3rem;right:2rem;width:90px;height:100px;" viewBox="0 0 90 100">
+        <circle cx="45" cy="45" r="35" fill="#F5E6C8" stroke="#1A1A1A" stroke-width="2"/>
+        <path d="M30 30 Q35 20 45 25 Q55 20 60 30" stroke="#1A1A1A" stroke-width="1.5" fill="none"/>
+        <path d="M28 40 Q35 35 40 40" stroke="#1A1A1A" stroke-width="1.5" fill="none"/>
+        <path d="M50 40 Q55 35 62 40" stroke="#1A1A1A" stroke-width="1.5" fill="none"/>
+        <path d="M30 50 Q45 60 60 50" stroke="#1A1A1A" stroke-width="1.5" fill="none"/>
+        <circle cx="35" cy="35" r="3" fill="#00B4D8"/>
+        <circle cx="55" cy="35" r="3" fill="#CC3333"/>
+        <circle cx="45" cy="48" r="3" fill="#2D6A4F"/>
+        <line x1="35" y1="35" x2="55" y2="35" stroke="#DDD" stroke-width="1"/>
+        <line x1="35" y1="35" x2="45" y2="48" stroke="#DDD" stroke-width="1"/>
+        <line x1="55" y1="35" x2="45" y2="48" stroke="#DDD" stroke-width="1"/>
+        <rect x="25" y="78" width="40" height="15" rx="4" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
+        <text x="45" y="89" text-anchor="middle" font-size="8" fill="white" font-family="Bangers">APRENDIZAJE</text>
+    </svg>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== MODELO VS ASISTENTE VS AGENTE ===================== -->
+<section id="modelo-vs-agente">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Conceptos clave</div>
+        <h2 class="section-title">Modelo, Asistente y Agente: <span class="highlight">¿cuál es la diferencia?</span></h2>
+        <p class="section-subtitle">No es lo mismo. Entender esto te ayuda a saber qué esperar de cada herramienta.</p>
+
+        <div class="three-col" style="margin-top:2rem;">
+            <div class="card">
+                <div class="emoji">🧠</div>
+                <h4>Modelo IA</h4>
+                <p><strong>Qué hace:</strong> Genera o procesa datos (texto, imagen, audio)</p>
+                <p><strong>Autonomía:</strong> Ninguna — necesita que le des instrucciones</p>
+                <p><strong>Ejemplo:</strong> GPT-4, el "cerebro" detrás de ChatGPT</p>
+            </div>
+            <div class="card cyan">
+                <div class="emoji">💬</div>
+                <h4>Asistente IA</h4>
+                <p><strong>Qué hace:</strong> Conversa contigo, responde preguntas, te ayuda</p>
+                <p><strong>Autonomía:</strong> Baja — es reactivo, responde lo que le preguntas</p>
+                <p><strong>Ejemplo:</strong> ChatGPT, Gemini, Copilot — les hablas y te responden</p>
+            </div>
+            <div class="card green">
+                <div class="emoji">🤖</div>
+                <h4>Agente IA</h4>
+                <p><strong>Qué hace:</strong> Actúa y resuelve problemas por su cuenta</p>
+                <p><strong>Autonomía:</strong> Alta — puede buscar info, enviar emails, publicar</p>
+                <p><strong>Ejemplo:</strong> Un bot que responde WhatsApp automáticamente con IA</p>
+            </div>
+        </div>
+
+        <div class="caption-box gold" style="margin-top:2rem;">
+            <strong>💡 Para este taller:</strong> Vamos a trabajar con <strong>asistentes IA</strong> (ChatGPT, Gemini, Copilot) porque son los más fáciles de usar desde tu celular y no necesitan configuración. ¡Pero al final del día sabrás la diferencia con los otros!
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== CASOS REALES IA ===================== -->
+<section id="casos-ia-latam">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Casos reales</div>
+        <h2 class="section-title">IA en empresas <span class="highlight-green">latinoamericanas</span></h2>
+        <p class="section-subtitle">No es ciencia ficción. Ya está pasando aquí, en nuestra región.</p>
+
+        <img class="section-image" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=250&fit=crop" alt="Innovación tecnológica en Latinoamérica">
+
+        <div class="three-col" style="margin-top:2rem;">
+            <div class="card green">
+                <div class="emoji">🏪</div>
+                <h4>Mercado Libre</h4>
+                <p>Usa IA para predecir demanda en cada región, optimizar rutas de entrega y personalizar recomendaciones. Resultado: entregas 2x más rápidas.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">☕</div>
+                <h4>ProfilePrint (Colombia)</h4>
+                <p>Startup colombiana que usa IA para evaluar la calidad del café con inteligencia artificial. Analiza fotos de granos y predice sabor y aroma.</p>
+            </div>
+            <div class="card cyan">
+                <div class="emoji">🌾</div>
+                <h4>Agricultura de precisión</h4>
+                <p>En Colombia, agricultores usan IA con drones y satélites para saber exactamente cuánta agua necesita cada metro de su cultivo.</p>
+            </div>
+        </div>
+
+        <div class="caption-box red" style="margin-top:2rem;">
+            <strong>🗣️ Mago de los Datos:</strong> "La IA no es magia, es matemática aplicada. Pero el resultado parece magia: entiende, genera y analiza como un cerebro digital. Y hoy esa tecnología está disponible gratis en tu celular."
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== ¿QUÉ ES IA? ===================== -->
+<section id="ia-que-es">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Bloque 1</div>
+        <h2 class="section-title">¿Qué es la <span class="highlight-cyan">Inteligencia Artificial</span>?</h2>
+        <p class="section-subtitle">No es magia. Es una herramienta — y ya la tienes en el bolsillo.</p>
+
+        <div class="caption-box cyan" style="margin-top:1.5rem;">
+            Imagina que tienes un <strong>asistente que leyó millones de libros, artículos y páginas web</strong>, y que puede escribir textos, crear imágenes, generar ideas para publicidad y ayudarte a organizar tu negocio... <strong>todo desde tu celular, gratis.</strong> Eso es la IA.
+        </div>
+
+        <div class="three-col" style="margin-top:2rem;">
+            <div class="card">
+                <div class="emoji">💬</div>
+                <h4>Te habla</h4>
+                <p>Le escribes o le hablas como si fuera una persona. "Necesito un texto para Instagram sobre mi tienda de artesanías."</p>
+            </div>
+            <div class="card">
+                <div class="emoji">🧠</div>
+                <h4>Entiende contexto</h4>
+                <p>No es como Google. Si le dices "soy artesano en Leticia", entiende la selva, las artesanías, el turismo — todo junto.</p>
+            </div>
+            <div class="card">
+                <div class="emoji">🎨</div>
+                <h4>Crea imágenes</h4>
+                <p>Le describes una foto y la genera. "Una mochila artesanal con la selva amazónica al fondo" — y lo crea.</p>
+            </div>
+        </div>
+
+        <div class="caption-box gold" style="margin-top:2rem;">
+            <strong>🗣️ Mago de los Datos:</strong> "¡No necesitas ser ingeniero! Si sabes enviar un WhatsApp, puedes usar IA. Solo tienes que saber pedirle lo que necesitas — y eso se llama <strong>prompt</strong>."
+        </div>
+
+        <!-- Verdadero o Falso -->
+        <h3 style="font-family:'Bangers'; font-size:1.8rem; margin-top:2rem; text-align:center;">🎮 Verdadero o Falso</h3>
+        <p style="text-align:center; color:var(--ink-faded); margin-bottom:1rem;">Toca cada tarjeta para ver la respuesta</p>
+
+        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
+            <div class="vf-question">1. La IA reemplazará a los artesanos de Leticia.</div>
+            <div class="vf-answer"><strong>FALSO.</strong> ❌ La IA no puede tejer una mochila ni contar la historia de los patrones ancestrales como lo haces tú. La IA es tu asistente de marketing, no tu reemplazo. Los clientes vienen por TI, por tu talento y tu historia.</div>
+        </div>
+        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
+            <div class="vf-question">2. Necesito internet rápido para usar IA en mi celular.</div>
+            <div class="vf-answer"><strong>FALSO.</strong> ❌ Muchas apps de IA funcionan con conexión básica. Y puedes preparar tus textos e imágenes cuando tengas señal y publicarlos después. ¡Incluso hay apps que funcionan offline!</div>
+        </div>
+        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
+            <div class="vf-question">3. La IA es gratis para uso básico.</div>
+            <div class="vf-answer"><strong>VERDADERO.</strong> ✅ ChatGPT, Gemini, Microsoft Copilot y Canva tienen versiones gratuitas que son más que suficientes para crear contenido de marketing. No necesitas pagar nada para empezar.</div>
+        </div>
+        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
+            <div class="vf-question">4. Con IA puedo crear un post de Instagram en menos de 5 minutos.</div>
+            <div class="vf-answer"><strong>VERDADERO.</strong> ✅ Texto + imagen + hashtags. En 3 a 5 minutos tienes una publicación lista para compartir. Lo que antes tomaba horas con un diseñador, ahora lo haces tú desde el celular.</div>
+        </div>
+    </div>
+    <!-- SVG: Robot assistant -->
+    <svg class="char" style="top:5rem;right:2rem;width:90px;height:110px;" viewBox="0 0 90 110">
+        <rect x="25" y="15" width="40" height="35" rx="8" fill="#00B4D8" stroke="#1A1A1A" stroke-width="2"/>
+        <circle cx="38" cy="30" r="4" fill="white" stroke="#1A1A1A" stroke-width="1.5"/><circle cx="52" cy="30" r="4" fill="white" stroke="#1A1A1A" stroke-width="1.5"/>
+        <circle cx="38" cy="30" r="2" fill="#1A1A1A"/><circle cx="52" cy="30" r="2" fill="#1A1A1A"/>
+        <path d="M38 40 Q45 45 52 40" stroke="#1A1A1A" stroke-width="2" fill="none"/>
+        <line x1="45" y1="50" x2="45" y2="55" stroke="#1A1A1A" stroke-width="2"/>
+        <line x1="45" y1="8" x2="45" y2="15" stroke="#1A1A1A" stroke-width="2"/>
+        <circle cx="45" cy="5" r="4" fill="#FFB703" stroke="#1A1A1A" stroke-width="1.5"/>
+        <rect x="30" y="55" width="30" height="30" rx="5" fill="#F5E6C8" stroke="#1A1A1A" stroke-width="2"/>
+        <rect x="20" y="58" width="10" height="20" rx="3" fill="#00B4D8" stroke="#1A1A1A" stroke-width="1.5"/>
+        <rect x="60" y="58" width="10" height="20" rx="3" fill="#00B4D8" stroke="#1A1A1A" stroke-width="1.5"/>
+        <rect x="32" y="85" width="10" height="20" rx="3" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
+        <rect x="48" y="85" width="10" height="20" rx="3" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
+    </svg>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
+<!-- ===================== IA EN TU CELULAR ===================== -->
+<section id="ia-tu-celular">
     <div class="halftone-overlay"></div>
     <div class="section-inner">
         <div class="section-label">Bloque 1</div>
         <h2 class="section-title">Las herramientas de IA que ya puedes <span class="highlight-cyan">usar hoy</span></h2>
-        <p class="section-subtitle">Todas gratis, todas desde tu celular, ninguna requiere ser experto. Escanea el QR o toca el enlace.</p>
+        <p class="section-subtitle">Todas gratis, todas desde tu celular, ninguna requiere ser experto.</p>
+
+        <img class="section-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=300&fit=crop" alt="Uso de smartphone para marketing digital">
 
         <div class="four-col" style="margin-top:2rem;">
             <div class="card cyan">
                 <div class="emoji">💬</div>
                 <h4>ChatGPT</h4>
-                <p>Escribe textos para redes sociales, descripciones de productos, slogans y más.</p>
+                <p>El más popular. Escribe textos, traduce, crea ideas. App disponible en Android y iPhone.</p>
             </div>
             <div class="card">
                 <div class="emoji">🔮</div>
                 <h4>Gemini (Google)</h4>
-                <p>Asistente de Google para ideas de contenido y estrategias de marketing.</p>
+                <p>El asistente de Google. Se integra con Gmail, Maps y fotos. Ideal para negocios.</p>
             </div>
             <div class="card gold">
                 <div class="emoji">🎨</div>
                 <h4>Canva</h4>
-                <p>Diseño gráfico con IA. Crea posts, logos, historias y materiales profesionales.</p>
+                <p>Diseño gráfico con IA. Crea posts, logos, menús y volantes en minutos.</p>
             </div>
             <div class="card green">
-                <div class="emoji">🤖</div>
+                <div class="emoji">📱</div>
                 <h4>Microsoft Copilot</h4>
-                <p>IA de Microsoft con generador de imágenes DALL-E incluido.</p>
+                <p>IA de Microsoft con generador de imágenes DALL-E incluido. Gratis.</p>
             </div>
         </div>
 
@@ -602,16 +1107,16 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
                 </a>
             </div>
             <div class="qr-grid-item">
-                <a href="https://www.canva.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fwww.canva.com&color=CC3333" alt="Canva">
-                    <div class="qr-label">Canva</div>
+                <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fcopilot.microsoft.com&color=CC3333" alt="Microsoft Copilot">
+                    <div class="qr-label">Microsoft Copilot</div>
                     <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
                 </a>
             </div>
             <div class="qr-grid-item">
-                <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fcopilot.microsoft.com&color=CC3333" alt="Microsoft Copilot">
-                    <div class="qr-label">Microsoft Copilot</div>
+                <a href="https://www.canva.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fwww.canva.com&color=CC3333" alt="Canva">
+                    <div class="qr-label">Canva</div>
                     <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
                 </a>
             </div>
@@ -621,121 +1126,6 @@ section { min-height: 100vh; position: relative; padding: 5rem 2rem 3rem; }
             <strong>📋 Tu primer prompt (pruébalo ahora):</strong><br>
             Abre ChatGPT o Gemini en tu celular y escribe:<br>
             <em>"Soy [tu nombre], tengo [tu negocio] en Leticia, Amazonas. Ayúdame a crear un slogan para mi marca que resalte la identidad amazónica."</em>
-        </div>
-    </div>
-</section>
-
-<div class="comic-divider"><div class="comic-divider-inner"></div></div>
-
-<!-- ===================== MARCA ===================== -->
-<section id="marca">
-    <div class="halftone-overlay"></div>
-    <div class="section-inner">
-        <div class="section-label">Bloque 1</div>
-        <h2 class="section-title">Construye tu <span class="highlight-cyan">marca</span> con identidad amazónica</h2>
-        <p class="section-subtitle">Tu marca es más que un logo. Es la historia que cuentas, la emoción que generas y la promesa que haces a tus clientes.</p>
-
-        <div class="caption-box cyan" style="margin-top:1.5rem;">
-            Imagina que tienes un <strong>asesor de marca que leyó millones de libros de marketing</strong>, y que puede ayudarte a crear un nombre, un slogan, una identidad visual y un mensaje que conecte con tus clientes... <strong>todo desde tu celular, gratis.</strong> Eso es la IA aplicada al marketing.
-        </div>
-
-        <div class="three-col" style="margin-top:2rem;">
-            <div class="card">
-                <div class="emoji">🏷️</div>
-                <h4>Nombre de marca</h4>
-                <p>Un nombre fácil de recordar, pronunciar y que transmita la esencia de tu negocio amazónico.</p>
-            </div>
-            <div class="card">
-                <div class="emoji">💬</div>
-                <h4>Slogan</h4>
-                <p>Una frase corta y memorable que capture la esencia de tu marca y la diferencie de la competencia.</p>
-            </div>
-            <div class="card">
-                <div class="emoji">🎨</div>
-                <h4>Identidad visual</h4>
-                <p>Colores, tipografías y elementos visuales que reflejen la identidad amazónica de tu marca.</p>
-            </div>
-        </div>
-
-        <div class="caption-box gold" style="margin-top:2rem;">
-            <strong>🗣️ Mago de los Datos:</strong> "La diferencia no es el producto. Es cómo lo cuentas. Una mochila descrita como 'tejido colorido' vale $40.000. Descrita como 'herencia ancestral tejida a mano con patrones que cuentan la historia de la selva' vale $200.000. ¡La IA te ayuda a contar esa historia!"
-        </div>
-
-        <!-- Verdadero o Falso -->
-        <h3 style="font-family:'Bangers'; font-size:1.8rem; margin-top:2rem; text-align:center;">🎮 Verdadero o Falso</h3>
-        <p style="text-align:center; color:var(--ink-faded); margin-bottom:1rem;">Toca cada tarjeta para ver la respuesta</p>
-
-        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
-            <div class="vf-question">1. Necesito un logo profesional para empezar a vender.</div>
-            <div class="vf-answer"><strong>FALSO.</strong> ❌ Puedes empezar con un nombre y un mensaje claro. El logo puede venir después. Lo importante es que tus clientes sepan qué vendes y por qué eres diferente.</div>
-        </div>
-        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
-            <div class="vf-question">2. La IA puede ayudarme a crear contenido para redes sociales.</div>
-            <div class="vf-answer"><strong>VERDADERO.</strong> ✅ ChatGPT, Gemini y Canva pueden generar textos, imágenes y videos cortos para tus redes sociales. Lo que antes tomaba horas con un diseñador, ahora lo haces tú desde el celular.</div>
-        </div>
-        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
-            <div class="vf-question">3. Necesito miles de seguidores para que mi negocio sea exitoso.</div>
-            <div class="vf-answer"><strong>FALSO.</strong> ❌ Es mejor tener 100 seguidores que realmente aman tu producto que 10.000 que no les importa. La calidad importa más que la cantidad.</div>
-        </div>
-        <div class="vf-card verdad" onclick="this.classList.toggle('revealed')">
-            <div class="vf-question">4. Con IA puedo crear un post de Instagram en menos de 5 minutos.</div>
-            <div class="vf-answer"><strong>VERDADERO.</strong> ✅ Texto + imagen + hashtags. En 3 a 5 minutos tienes una publicación lista para compartir. La IA te ayuda a crear contenido profesional sin ser diseñador.</div>
-        </div>
-    </div>
-    <!-- SVG: Brand/Marketing -->
-    <svg class="char" style="top:5rem;right:2rem;width:90px;height:110px;" viewBox="0 0 90 110">
-        <rect x="25" y="15" width="40" height="35" rx="8" fill="#CC3333" stroke="#1A1A1A" stroke-width="2"/>
-        <circle cx="38" cy="30" r="4" fill="white" stroke="#1A1A1A" stroke-width="1.5"/><circle cx="52" cy="30" r="4" fill="white" stroke="#1A1A1A" stroke-width="1.5"/>
-        <circle cx="38" cy="30" r="2" fill="#1A1A1A"/><circle cx="52" cy="30" r="2" fill="#1A1A1A"/>
-        <path d="M38 40 Q45 45 52 40" stroke="#1A1A1A" stroke-width="2" fill="none"/>
-        <line x1="45" y1="50" x2="45" y2="55" stroke="#1A1A1A" stroke-width="2"/>
-        <line x1="45" y1="8" x2="45" y2="15" stroke="#1A1A1A" stroke-width="2"/>
-        <circle cx="45" cy="5" r="4" fill="#FFB703" stroke="#1A1A1A" stroke-width="1.5"/>
-        <rect x="30" y="55" width="30" height="30" rx="5" fill="#F5E6C8" stroke="#1A1A1A" stroke-width="2"/>
-        <rect x="20" y="58" width="10" height="20" rx="3" fill="#CC3333" stroke="#1A1A1A" stroke-width="1.5"/>
-        <rect x="60" y="58" width="10" height="20" rx="3" fill="#CC3333" stroke="#1A1A1A" stroke-width="1.5"/>
-        <rect x="32" y="85" width="10" height="20" rx="3" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
-        <rect x="48" y="85" width="10" height="20" rx="3" fill="#1A3A5C" stroke="#1A1A1A" stroke-width="1.5"/>
-    </svg>
-</section>
-
-<div class="comic-divider"><div class="comic-divider-inner"></div></div>
-
-<!-- ===================== CONTENIDO ===================== -->
-<section id="contenido">
-    <div class="halftone-overlay"></div>
-    <div class="section-inner">
-        <div class="section-label">Bloque 2</div>
-        <h2 class="section-title">Crea <span class="highlight-green">contenido</span> que enamora con IA</h2>
-        <p class="section-subtitle">No necesitas ser diseñador ni redactor. La IA te ayuda a crear contenido profesional que resalte tu marca.</p>
-
-        <img class="section-image" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=300&fit=crop" alt="Creación de contenido digital">
-
-        <div class="two-col" style="margin-top:2rem;">
-            <div class="card">
-                <div class="emoji">✍️</div>
-                <h4>Textos para redes</h4>
-                <p>Descripciones de productos, posts para Instagram, guiones para videos, respuestas a clientes.</p>
-            </div>
-            <div class="card">
-                <div class="emoji">🎨</div>
-                <h4>Imágenes profesionales</h4>
-                <p>Fotos de producto, fondos para posts, logos, historias de Instagram, portadas para Facebook.</p>
-            </div>
-            <div class="card">
-                <div class="emoji">🎬</div>
-                <h4>Videos cortos</h4>
-                <p>Guiones para Reels y TikTok, ideas para contenido viral, textos para voz en off.</p>
-            </div>
-            <div class="card">
-                <div class="emoji">📅</div>
-                <h4>Calendario de contenido</h4>
-                <p>Planificación mensual de publicaciones, ideas para cada día, fechas especiales.</p>
-            </div>
-        </div>
-
-        <div class="caption-box red" style="margin-top:2rem;">
-            <strong>🗣️ Mago de los Datos:</strong> "El contenido es el rey. Pero no necesitas ser un rey del diseño. Con la IA, cualquier emprendedor puede crear contenido profesional que compita con las grandes marcas. ¡La clave es la constancia y la autenticidad!"
         </div>
     </div>
 </section>
@@ -1237,6 +1627,74 @@ Tono: [describe el tono de tu marca — ej: auténtico, educativo, divertido]</d
 
 <div class="comic-divider"><div class="comic-divider-inner"></div></div>
 
+<!-- ===================== HERRAMIENTAS ===================== -->
+<section id="herramientas">
+    <div class="halftone-overlay"></div>
+    <div class="section-inner">
+        <div class="section-label">Recursos</div>
+        <h2 class="section-title">Todas las <span class="highlight-cyan">herramientas</span> en un solo lugar</h2>
+        <p class="section-subtitle">Escanea el QR o toca el enlace desde tu celular.</p>
+
+        <div class="qr-grid">
+            <div class="qr-grid-item">
+                <a href="https://chatgpt.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fchatgpt.com&color=CC3333" alt="ChatGPT">
+                    <div class="qr-label">ChatGPT</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+            <div class="qr-grid-item">
+                <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fgemini.google.com&color=CC3333" alt="Gemini">
+                    <div class="qr-label">Gemini</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+            <div class="qr-grid-item">
+                <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fcopilot.microsoft.com&color=CC3333" alt="Copilot">
+                    <div class="qr-label">Copilot</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+            <div class="qr-grid-item">
+                <a href="https://www.canva.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fwww.canva.com&color=CC3333" alt="Canva">
+                    <div class="qr-label">Canva</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+            <div class="qr-grid-item">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fwww.instagram.com&color=CC3333" alt="Instagram">
+                    <div class="qr-label">Instagram</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+            <div class="qr-grid-item">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https%3A%2F%2Fwww.facebook.com&color=CC3333" alt="Facebook">
+                    <div class="qr-label">Facebook</div>
+                    <div style="font-size:0.65rem; color:var(--cyan-amazon); margin-top:0.2rem; text-decoration:underline;">Abrir enlace →</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="checklist" style="margin-top:2rem;">
+            <h3 style="font-family:'Bangers'; font-size:1.5rem;">✅ Checklist del emprendedor digital</h3>
+            <p>☐ Tengo el nombre y slogan de mi marca</p>
+            <p>☐ Tengo la descripción de mi producto escrita</p>
+            <p>☐ Tengo una imagen profesional para mi producto</p>
+            <p>☐ Tengo un calendario de contenido para el mes</p>
+            <p>☐ Publiqué mi primer post en redes sociales</p>
+            <p>☐ Revisé las métricas de mi publicación</p>
+            <p>☐ Enseñé a alguien más lo que aprendí</p>
+        </div>
+    </div>
+</section>
+
+<div class="comic-divider"><div class="comic-divider-inner"></div></div>
+
 <!-- ===================== CIERRE ===================== -->
 <section id="cierre">
     <div class="halftone-overlay"></div>
@@ -1352,6 +1810,10 @@ function createTimer(id, seconds) {
         }
     };
 }
+
+const energizer1 = createTimer('timer-energizer1', 300);
+function startEnergizer1() { energizer1.start(); }
+function resetEnergizer1() { energizer1.reset(); }
 
 const act1 = createTimer('timer-act1', 1200);
 function startAct1() { act1.start(); }
